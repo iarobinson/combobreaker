@@ -16,11 +16,15 @@ This is all easy via Sammy's link (Sammy.pl/combobreaker) the parts look like th
 
 ## Learning to Program Arduino
 
-First off, I'd like to run a simple program to ensure I'm able to successfully write code to the microcontroller.
+First off, I'd like to run a simple program to ensure I'm able to successfully write code to the micro-controller.
 
 I found this tutorial useful for making the first move:
 https://www.arduino.cc/en/tutorial/blink
 
-This helped me overcome initial steps like setting the serial port, selecting the right device and more.
+This helped me overcome initial steps like setting the serial port and selecting the right device.
+
+### Simple Arduino Project Using These Tools
+
+My initial goal is to create a tool that can just do something real. If I can get the stepper motor to turn slowly for a few seconds, I'd be happy with that.
 
 ##
