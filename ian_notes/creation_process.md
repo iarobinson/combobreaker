@@ -12,7 +12,7 @@ First off, I don't know anything about robotics. This is my first foray into thi
 
 This is all easy via Sammy's link (Sammy.pl/combobreaker) the parts look like this once they arrive and are parsed down to what is needed:
 
-https://github.com/iarobinson/combobreaker/blob/master/ian_notes/image/01combobreaker_parts.jpg
+![alt tag](https://github.com/iarobinson/combobreaker/blob/master/ian_notes/image/01combobreaker_parts.jpg)
 
 ## Learning to Program Arduino
 
