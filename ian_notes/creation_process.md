@@ -27,7 +27,7 @@ This helped me overcome initial steps like setting the serial port and selecting
 
 My initial goal is to just get movement out of anything. The first thing I was able to do was get the S1213 Analog Servo to sweep back and forth.
 
-[alt tag]<!-- !image_URL_here -->
+[alt tag]https://github.com/iarobinson/combobreaker/blob/master/ian_notes/image/03servo_wiring.jpg
 
 Process:
 1. Plug your Arduino nano into the breadboard. It doesn't matter where specifically, but look to the image for guidance
