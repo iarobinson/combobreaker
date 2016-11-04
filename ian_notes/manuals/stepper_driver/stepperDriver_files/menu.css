@@ -1,0 +1,205 @@
+/* 
+    Document   : menu
+    Created on : 10-Aug-2012, 11:38:59 AM
+    Author     : Patrick McNeil
+    Description:
+        Phidget header menu style
+*/
+
+div.ph-header
+{
+	position: relative;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 985px;
+	height: 85px;
+	/*height: 105px;*/
+}
+div.ph-header-container
+{
+	position: absolute;
+	height: 80px;
+	width: 975px;
+	margin-bottom: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+div.ph-header-image
+{
+	float: left;
+	display: inline;
+	width: 232px;
+	height: 80px;
+	text-align: center;
+	vertical-align: middle;
+}
+div.ph-header-inner-container
+{
+	float: left;
+	display: inline;
+	width: 743px;
+}
+div.ph-header-text
+{
+	margin-top: 20px;
+	/*margin-top: 5px;*/
+}
+div.ph-header-text div
+{
+	padding: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+div.ph-header-subtext
+{
+	margin-top: -10px;
+}
+div.ph-header-subtext div
+{
+	padding: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+        color: red;
+}
+div.ph-menu-container
+{
+	height: 26px;
+	overflow: hidden;
+}
+ul.ph-menu
+{
+	float: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	overflow: hidden;
+}
+ul.ph-menu li
+{
+	float: left;
+	display: inline;
+}
+ul.ph-menu li a
+{
+	background-image: url(../images/layout/topMenu.png);
+	background-repeat: no-repeat;
+	float: left;
+	display: inline;
+	height: 0;
+	overflow: hidden;
+	padding-top: 26px;
+}
+li.ph-menu-home a
+{
+	background-position: 0 0;
+	width: 60px;
+}
+li.ph-menu-home a:hover
+{
+	background-position: 0 -26px;
+}
+li.ph-menu-support a
+{
+	background-position: -744px 0;
+	width: 75px;
+}
+li.ph-menu-support a:hover
+{
+	background-position: -744px -26px;
+}
+li.ph-menu-forums a
+{
+	background-position: -60px 0;
+	width: 69px;
+}
+li.ph-menu-forums a:hover
+{
+	background-position: -60px -26px;
+}
+li.ph-menu-drivers a
+{
+	background-position: -129px 0;
+	width: 69px;
+}
+li.ph-menu-drivers a:hover
+{
+	background-position: -129px -26px;
+}
+li.ph-menu-programming a
+{
+	background-position: -198px 0;
+	width: 111px;
+}
+li.ph-menu-programming a:hover
+{
+	background-position: -198px -26px;
+}
+li.ph-menu-policies a
+{
+	background-position: -309px 0;
+	width: 71px;
+}
+li.ph-menu-policies a:hover
+{
+	background-position: -309px -26px;
+}
+li.ph-menu-contact a
+{
+	background-position: -380px 0;
+	width: 91px;
+}
+li.ph-menu-contact a:hover
+{
+	background-position: -380px -26px;
+}
+li.ph-menu-news a
+{
+	background-position: -471px 0;
+	width: 57px;
+}
+li.ph-menu-news a:hover
+{
+	background-position: -471px -26px;
+}
+li.ph-menu-dealers a
+{
+	background-position: -528px 0;
+	width: 71px;
+}
+li.ph-menu-dealers a:hover
+{
+	background-position: -528px -26px;
+}
+li.ph-menu-login a
+{
+	background-position: -599px 0;
+	width: 71px;
+}
+li.ph-menu-login a:hover
+{
+	background-position: -599px -26px;
+}
+li.ph-menu-logout a
+{
+	background-position: -599px -52px;
+	width: 71px;
+}
+li.ph-menu-logout a:hover
+{
+	background-position: -599px -78px;
+}
+li.ph-menu-cart a
+{
+	background-position: -670px 0;
+	width: 68px;
+}
+li.ph-menu-cart a:hover
+{
+	background-position: -670px -26px;
+}

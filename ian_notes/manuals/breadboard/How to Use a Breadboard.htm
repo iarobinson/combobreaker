@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml -->
+<html lang="en-US" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <script type="text/javascript" src="./How to Use a Breadboard_files/d41e691766"></script><script src="./How to Use a Breadboard_files/nr-974.min.js"></script><script type="text/javascript" async="" src="./How to Use a Breadboard_files/pinit_main.js"></script><script type="text/javascript" async="" src="./How to Use a Breadboard_files/ec.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d41e691766","applicationID":"6266461","transactionName":"YVdXMhQEC0NSWk1fV1gdZgUPAAtTVntMUlxfV0ZJDgQLVF9cS0UXRlNSA0gEFkBLFmlEV1xXVhIhEAxUVg==","queueTime":0,"applicationTime":74,"ttGuid":"5FBFFA759034BAC7","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+   <title>How to Use a Breadboard</title>
+   <script type="text/javascript">
+   document.domain = 'sciencebuddies.org';
+   var sb = sb || {}; sb.user = {};
+   sb.user.isMember =  false;    sb.user.token = "X2SsUE_s844O2M0gfuvPjyOBG_31oOvd0fN2e42s1sShQF8bmXPJmTA4Nd9q31C5LmMXhWsRq009SUmm6xCn59keubwHBSoVjDtIvhCtG619YTwGlil7qws6SL_Io4h8wgF5FCopSRmqDPls9PYYCpjtVyV7ihUw77PpXbz5hzSeXYzWtq9y3zuszBKi9XE7";
+   </script>
+
+   <script src="./How to Use a Breadboard_files/4862444081.js"></script>
+
+<meta name="description" content="An introduction on how to use a solderless breadboard for circuits and electronics projects.">
+
+<meta name="keywords" content="breadboard, solder, solderless, tutorial, beginner, introduction, how to, use, using, circuits, electronics, projects, LED, resistor, jumper wire, battery, row, column, hole, bus, rail, strip, power, ground, voltage, current">
+
+
+
+
+
+<link rel="stylesheet" href="./How to Use a Breadboard_files/all.css" type="text/css" media="all">
+<link rel="stylesheet" href="./How to Use a Breadboard_files/all-print.css" type="text/css" media="print" title="screen">
+<link rel="alternate stylesheet" href="./How to Use a Breadboard_files/all-pdf.css" type="text/css" media="all" title="print">
+<link rel="stylesheet" href="./How to Use a Breadboard_files/jquery-ui-1.7.2b.custom.css" type="text/css" media="all">
+
+<script src="./How to Use a Breadboard_files/client.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/jquery.ba-hashchange.min.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/jquery-ui-1.7.2.custom.min.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/Variations.ashx" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/sb.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/sb-desktop.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/jquery.url.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/jquery.appear.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./How to Use a Breadboard_files/magnific-popup.css" type="text/css" media="all">
+
+<script type="text/javascript">
+document.write('<meta name="viewport" content="width=' + (screen.height >= 1024 ? '1024' : '980') + 'px">');
+</script><meta name="viewport" content="width=980px">
+
+<script type="text/javascript">
+   sb.pageType = "Other";
+   if (sb.getCookie('sv') == 'ma') {
+      alert('Some of our pages are not ready for mobile yet.  You can still view this page, but you will be seeing the desktop version.');
+      sb.setCookie('sv', 'da');
+   }
+</script>
+
+<script src="./How to Use a Breadboard_files/jquery.toggle-image.js" type="text/javascript"></script>
+
+<style type="text/css">
+@media screen {
+   div.keyinfo { background-color: #e0d6e8; padding: 10px 10px; }
+}
+</style>
+
+<script type="text/javascript">
+sb.pageType = "ProjectGuide";
+</script>
+
+
+
+
+
+
+
+
+
+
+<!--[-->
+
+
+<!--]-->
+
+
+
+
+
+<script src="./How to Use a Breadboard_files/platform.js" async="" defer="" gapi_processed="true"></script>
+<script src="./How to Use a Breadboard_files/classroom.js" type="text/javascript"></script>
+<style>
+   h1 { width: 700px; min-height: 48px; }
+   .ui-widget #feedback_dialog { overflow: auto; }
+   #feedback_dialog input { margin-bottom: 5px; }
+</style>
+   
+<meta property="og:title" content="How to Use a Breadboard">
+<meta property="og:description" content="An introduction on how to use a solderless breadboard for circuits and electronics projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml">
+<meta property="og:image" content="http://www.cdn.sciencebuddies.org/Files/7300/7/basic-LED-circuit.jpg">
+<meta property="og:site_name" content="Science Buddies">
+   
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@SienceBuddies">
+<meta property="twitter:title" content="How to Use a Breadboard">
+<meta property="twitter:description" content="An introduction on how to use a solderless breadboard for circuits and electronics projects.">
+<meta property="twitter:image" content="http://www.cdn.sciencebuddies.org/Files/7300/7/basic-LED-circuit.jpg">
+
+<style type="text/css"> .PIN_1478160583389_embed_grid { 
+  width: 100%;
+  max-width: 257px;
+  min-width: 140px;
+  display: inline-block;
+  box-shadow: inset 0 0 1px #000;
+  border-radius: 5px;
+  overflow: hidden;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: rgb(54, 54, 54);
+  box-sizing: border-box;
+  background: #fff;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+ .PIN_1478160583389_embed_grid * { 
+  display: block;
+  position: relative;
+  font: inherit;
+  cursor: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_hd { 
+  height: 55px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_hd .PIN_1478160583389_img { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 36px;
+  width: 36px;
+  border-radius: 3px;
+  background: transparent url () 0 0 no-repeat;
+  background-size: cover;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_hd .PIN_1478160583389_pinner { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+  position: absolute;
+  top: 20px;
+  left: 56px;
+  font-size: 14px;
+  font-weight: bold;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_bd { 
+  padding: 0 10px;
+  -moz-scrollbars: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_bd .PIN_1478160583389_ct { 
+  width: 100%;
+  height: auto;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  display: inline-block;
+  width: 100%;
+  padding: 1px;
+  vertical-align: top;
+  min-width: 60px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col .PIN_1478160583389_img { 
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 1px #000;
+  border-radius: 2px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft { 
+  padding: 11px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button { 
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: inset 0 0 1px #888;
+  background-color: #efefef;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 33px;
+  width: 100%;
+  min-width: 70px;
+  padding: 0 3px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button .PIN_1478160583389_label { 
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button .PIN_1478160583389_label.PIN_1478160583389_top { 
+  top: 0;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button .PIN_1478160583389_label.PIN_1478160583389_bottom { 
+  bottom: 0;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button .PIN_1478160583389_label .PIN_1478160583389_string { 
+  white-space: pre;
+  color: #746d6a;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: top;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button .PIN_1478160583389_label .PIN_1478160583389_logo { 
+  display: inline-block;
+  vertical-align: top;
+  height: 33px;
+  width: 65px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgd2lkdGg9IjY0cHgiIHZpZXdCb3g9IjAgMCA2NCAxNiI+PGc+PHBhdGggZD0iTTMzLjIxNSw3LjY2NyBDMzMuODg4LDcuNjY3IDM0LjEyMiw4LjA3NSAzNC4xMjIsOC41NjIgQzM0LjEyMiw5LjM4NiAzMy40ODIsOS44ODkgMzIuNDgxLDkuODg5IEMzMi4xMjQsOS44ODkgMzEuNjI1LDkuODA0IDMxLjMyOSw5LjcwNCBDMzEuNDUyLDguOTQ4IDMxLjk0LDcuNjY3IDMzLjIxNSw3LjY2NyBMMzMuMjE1LDcuNjY3IFogTTQ3LjY2OSw3LjY2NyBDNDguMjg0LDcuNjY3IDQ4LjU3MSw4LjA3NSA0OC41NzEsOC41NjIgQzQ4LjU3MSw5LjM4NiA0Ny45MzYsOS44ODkgNDYuOTMxLDkuODg5IEM0Ni41NzIsOS44ODkgNDYuMDcsOS44MDQgNDUuNzcyLDkuNzA0IEM0NS44OTUsOC45NDggNDYuNDM5LDcuNjY3IDQ3LjY1OSw3LjY2NyBMNDcuNjY5LDcuNjY3IFogTTYyLjkwNiw3LjczNiBDNjMuMTExLDcuNzM2IDYzLjI0NSw3LjY1IDYzLjI4Niw3LjQ1NCBDNjMuMzQ3LDcuMTY2IDYzLjQ3LDYuNjY0IDYzLjUxMSw2LjUzMSBDNjMuNTUyLDYuMzU2IDYzLjQ1LDYuMjIzIDYzLjI1NSw2LjIyMyBMNjEuNzM3LDYuMjIzIEM2MS44NCw1Ljc4MiA2Mi4yNzEsNC4zNjcgNjIuMjcxLDMuNDQ0IEM2Mi4yNzEsMS41OTkgNjAuNzAyLDAuMDMgNTguNDg3LDAuMDMgQzU1Ljk3NSwwLjAzIDU0LjM0NCwxLjcxMSA1NC4zNDQsNC4wOCBDNTQuMzQ0LDQuNzY3IDU0LjYwMSw1LjU3NyA1NC45MTksNi4wNjkgQzU0Ljc4NSw2LjA1OSA1NC42NDIsNi4wNTQgNTQuNTA4LDYuMDU0IEM1Mi42MDEsNi4wNTQgNTEuNDAyLDcuMDkgNTEuNDAyLDguNTkzIEM1MS40MDIsMTAuMDA4IDUyLjUwOSwxMC41NTkgNTMuNTY1LDEwLjkyIEM1NC40ODgsMTEuMjQ5IDU1LjM0OSwxMS40IDU1LjM0OSwxMi4xMiBDNTUuMzQ5LDEyLjYxMiA1NC44NzgsMTIuODk5IDUzLjk1NSwxMi44OTkgQzUyLjg1OCwxMi44OTkgNTIuMjUzLDEyLjM4NyA1Mi4wOTksMTIuMTkyIEM1Mi4yMDEsMTIuMTEgNTIuMzU1LDExLjkxNSA1Mi4zNTUsMTEuNTk1IEM1Mi4zNTUsMTEuMTQ0IDUyLjAzOSwxMC43NzUgNTEuNDQ5LDEwLjc3NSBDNTAuOTQ4LDEwLjc3NSA1MC41MjYsMTEuMTg1IDUwLjQxOSwxMS43MTggQzQ5LjYxOSwxMi4zNzQgNDguNzQzLDEyLjgwMiA0Ny41MDMsMTIuODAyIEM0Ni4yODMsMTIuODAyIDQ1LjY0NywxMi4xNjYgNDUuNjQ3LDEwLjgxMyBDNDUuOTM0LDEwLjkwMiA0Ni42ODMsMTEuMDA4IDQ3LjE3NSwxMS4wMDggQzQ5LjI0NiwxMS4wMDggNTAuNjUxLDEwLjA2NCA1MC42NTEsOC4xODQgQzUwLjY1MSw3LjE3MiA0OS43NjksNi4xMDggNDguMDA1LDYuMTA4IEM0NS42OTIsNi4xMDggNDQuMzk5LDcuNTc1IDQzLjgzMiw5LjE4NCBMNDMuMzU1LDkuMDc2IEM0My40ODksOC43MTcgNDMuNTc3LDguMzAxIDQzLjU3Nyw3Ljg0NSBDNDMuNTc3LDcuMDQ1IDQzLjA4NSw2LjEwNyA0MS43NjIsNi4xMDcgQzQwLjg0NSw2LjEwNyAzOS45NzQsNi43MDggMzkuMzcsNy42MSBMMzkuNjI2LDYuNjA2IEMzOS42NjQsNi40NTIgMzkuNTk5LDYuMjgzIDM5LjM1OSw2LjI4MyBMMzguMDA2LDYuMjgzIEMzNy44MTQsNi4yODMgMzcuNjc4LDYuMzU0IDM3LjYyLDYuNTcgTDM2LjY2NywxMC4zMTIgQzM2LjM5LDExLjQzIDM0LjkxMywxMi44MTQgMzMuMDU3LDEyLjgxNCBDMzEuODM1LDEyLjgxNCAzMS4yMDEsMTIuMTM4IDMxLjIwMSwxMC43ODQgQzMxLjUyMiwxMC45MTIgMzIuMjM1LDExLjAyIDMyLjcyNiwxMS4wMiBDMzQuODc5LDExLjAyIDM2LjIwNSwxMC4wODEgMzYuMjA1LDguMTk3IEMzNi4yMDUsNy4xODcgMzUuMzEzLDYuMTI0IDMzLjU2LDYuMTI0IEMzMC45NDUsNi4xMjQgMjkuMzQ1LDguMTQ4IDI5LjA3OSwxMC40NDEgQzI4Ljk2NiwxMS4zOTQgMjguMTU2LDEyLjcwMyAyNy4yODQsMTIuNzAzIEMyNi44NjQsMTIuNzAzIDI2LjYyOCwxMi40MzYgMjYuNjI4LDExLjk4NSBDMjYuNjI4LDExLjU5NSAyNi45MDEsMTAuNjMxIDI3LjIwMiw5LjQzMiBDMjcuMzA1LDkuMDMyIDI3LjQ1Niw4LjQxNiAyNy42MjYsNy43NCBMMjkuMDUxLDcuNzQgQzI5LjI1OSw3Ljc0IDI5LjM4Miw3LjY0NyAyOS40MzEsNy40NTMgQzI5LjQ5OCw3LjE2NSAyOS42MjIsNi42NzMgMjkuNjU2LDYuNTQgQzI5LjcwNCw2LjM2NiAyOS42MDEsNi4yMjcgMjkuNDA0LDYuMjI3IEwyOC4wMDksNi4yMjcgTDI4LjY2NiwzLjYwNiBDMjguNzI3LDMuMzQ2IDI4LjUwOCwzLjE5NiAyOC4yODEsMy4yNDQgQzI4LjI4MSwzLjI0NCAyNy4yMDQsMy40NTUgMjcuMDA2LDMuNDk4IEMyNi44MDQsMy41MzkgMjYuNjQ3LDMuNjQ2IDI2LjU3NSwzLjkzOSBMMjYuMDExLDYuMjI1IEwyNC45MDQsNi4yMjUgQzI0LjY5MSw2LjIyNSAyNC41NjgsNi4zMTIgMjQuNTIyLDYuNTA5IEMyNC40NTMsNi43OTIgMjQuMzI3LDcuMjg4IDI0LjI5Myw3LjQyMiBDMjQuMjQ1LDcuNiAyNC4zNSw3LjczNSAyNC41NSw3LjczNSBMMjUuNjQ1LDcuNzM1IEMyNS42MzgsNy43NjkgMjUuMjUsOS4yNDIgMjQuOTM3LDEwLjU2NSBDMjQuNzg5LDExLjIwNCAyNC4yOTMsMTIuNjkxIDIzLjQ4MSwxMi42OTEgQzIyLjk5OSwxMi42OTEgMjIuNzk0LDEyLjQ0NSAyMi43OTQsMTEuOTIyIEMyMi43OTQsMTEuMDk2IDIzLjYwNiw5LjAzMSAyMy42MDYsOC4wOTMgQzIzLjYwNiw2Ljg0MiAyMi45MzUsNi4xMTQgMjEuNTU5LDYuMTE0IEMyMC42OTMsNi4xMTQgMTkuNzk1LDYuNjc4IDE5LjQxNCw3LjE3MSBDMTkuNDE0LDcuMTcxIDE5LjUyOSw2Ljc3MSAxOS41Nyw2LjYxNyBDMTkuNjEyLDYuNDUzIDE5LjUyOSw2LjI5MiAxOS4zMTQsNi4yOTIgTDE3Ljk3MSw2LjI5MiBDMTcuNjg0LDYuMjkyIDE3LjYwOSw2LjQ0NiAxNy41NjcsNi42MTIgTDE2LjU5OCwxMC40MDYgQzE2LjI3NSwxMS42NTcgMTUuNTAzLDEyLjcwMyAxNC42OCwxMi43MDMgQzE0LjI1LDEyLjcwMyAxNC4wNjUsMTIuNDM2IDE0LjA2NSwxMS45NzQgQzE0LjA2NSwxMS41ODUgMTQuMzEzLDEwLjYyMSAxNC42MTksOS40MjEgQzE0Ljk4Myw3Ljk2NSAxNS4zMDYsNi43NjYgMTUuMzQyLDYuNjIyIEMxNS4zODgsNi40NDQgMTUuMzA3LDYuMjg4IDE1LjA3NSw2LjI4OCBMMTMuNzIyLDYuMjg4IEMxMy40NzYsNi4yODggMTMuMzg4LDYuNDE0IDEzLjMzOCw2LjU5NSBDMTMuMzM4LDYuNTk1IDEyLjk1OSw4LjAzNCAxMi41NTcsOS42NDEgQzEyLjI3LDEwLjgwNiAxMS45NDIsMTEuOTkzIDExLjk0MiwxMi41NDkgQzExLjk0MiwxMy41NDMgMTIuMzg2LDE0LjI5MiAxMy42MTYsMTQuMjkyIEMxNC41NTksMTQuMjkyIDE1LjMwOCwxMy44MSAxNS44ODIsMTMuMjAyIEwxNS43MzksMTMuNzY2IEMxNS42ODcsMTMuOTU3IDE1Ljc0OSwxNC4xMjUgMTUuOTY3LDE0LjEyNSBMMTcuMzUyLDE0LjEyNSBDMTcuNTkzLDE0LjEyNSAxNy42ODUsMTQuMDI3IDE3LjczNiwxMy44MTcgTDE4LjgzMyw5LjU1MSBDMTkuMTAzLDguNDUxIDE5Ljc3Nyw3LjcyNiAyMC43Myw3LjcyNiBDMjEuMTgxLDcuNzI2IDIxLjU3MSw4LjAyNCAyMS41MjYsOC42MDUgQzIxLjQ3NSw5LjI0NCAyMC43MDYsMTEuNTM4IDIwLjcwNiwxMi41NDUgQzIwLjcwNiwxMy4zMDMgMjAuOTg5LDE0LjI4OCAyMi40MjIsMTQuMjg4IEMyMy4zOTYsMTQuMjg4IDI0LjExNCwxMy44MTYgMjQuNjM3LDEzLjIxMSBDMjQuODMyLDEzLjg0OSAyNS4zMzQsMTQuMjggMjYuMjY3LDE0LjI4IEMyNy44MTYsMTQuMjggMjguNzQ5LDEzLjM2IDI5LjMwMiwxMi40MzggQzI5Ljc1MSwxMy41MTUgMzAuODE1LDE0LjI4NCAzMi4zNzksMTQuMjg0IEMzMy45NjgsMTQuMjg0IDM1LjIwNCwxMy42MSAzNi4wNzYsMTIuNjk3IEwzNS44MDYsMTMuNzgxIEMzNS43NTUsMTMuOTczIDM1Ljg0MSwxNC4xMjUgMzYuMDY3LDE0LjEyNSBMMzcuNDM3LDE0LjEyNSBDMzcuNjIxLDE0LjEyNSAzNy43NTcsMTQuMDI4IDM3LjgwNiwxMy44MyBDMzcuODI4LDEzLjczNCAzOC4wMjcsMTIuOTY5IDM4LjMwOCwxMS44ODIgQzM4Ljg0Miw5LjgwMSAzOS43MDMsNy42NDIgNDAuOTkzLDcuNjQyIEM0MS40NDksNy42NDIgNDEuNjM3LDcuODk3IDQxLjYzNyw4LjI5OCBDNDEuNjM3LDguNDg3IDQxLjU4MSw4LjY0OSA0MS41MzQsOC43MzkgQzQwLjkwOSw4LjYxNCA0MC40MDQsOC45MjIgNDAuNDA0LDkuNTkgQzQwLjQwNCwxMC4wMjcgNDAuODYzLDEwLjQyMyA0MS40ODEsMTAuNDIzIEM0MS45NTMsMTAuNDIzIDQyLjM0NSwxMC4zMDggNDIuNjU3LDEwLjA5NyBDNDIuOTU0LDEwLjE1OSA0My4yNjIsMTAuMjI1IDQzLjU4LDEwLjI5NyBDNDMuNTM5LDEwLjYxIDQzLjUwOCwxMC45MTggNDMuNTA4LDExLjIwNyBDNDMuNTA4LDEyLjg3OSA0NC43NjksMTQuMjk3IDQ2LjkwMiwxNC4yOTcgQzQ4LjU4NCwxNC4yOTcgNDkuNjUsMTMuNzMzIDUwLjY2NSwxMi44OTggQzUxLjE0NywxMy42NzggNTIuMzQ3LDE0LjMwMyA1My45MjYsMTQuMzAzIEM1Ni4wOSwxNC4zMDMgNTcuMzIsMTMuMTc1IDU3LjMyLDExLjY4OCBDNTcuMzIsMTAuMzM1IDU2LjIxMyw5Ljg0MyA1NS4wNzQsOS40MzMgQzU0LjE1Miw5LjA5NCA1My4zNzIsOC45MiA1My4zNzIsOC4yNjQgQzUzLjM3Miw3LjcyIDUzLjgwMyw3LjQ3NCA1NC41MjEsNy40NzQgQzU0Ljk5Miw3LjQ3NCA1NS4zNDEsNy41NzcgNTUuNTM2LDcuNjI4IEM1NS43Miw4LjA4OSA1Ni4xMSw4LjYxMiA1Ni43NzcsOC42MTIgQzU3LjMzNSw4LjYxMiA1Ny41ODcsOC4xNzEgNTcuNTg3LDcuNzYxIEM1Ny41ODcsNi42MDIgNTUuNjU3LDYuNDc5IDU1LjY1NywzLjk5OCBDNTUuNjU3LDIuNDUgNTYuNTMzLDEuMTc4IDU4LjM0MywxLjE3OCBDNTkuNjAzLDEuMTc4IDYwLjQyNSwxLjk3OCA2MC40MjUsMy4yNiBDNjAuNDI1LDQuMzE2IDU5Ljc3OSw2LjIxMyA1OS43NzksNi4yMTMgTDU4LjY4Miw2LjIxMyBDNTguNDcyLDYuMjEzIDU4LjM0Nyw2LjI5NSA1OC4yOTksNi40OSBMNTguMDcxLDcuNDAyIEM1OC4wMjcsNy41NzcgNTguMTI4LDcuNzEgNTguMzI3LDcuNzEgTDU5LjM5Myw3LjcxIEM1OS42MTcsNy43NDkgNTguMjg2LDEyLjQ1IDU4LjI4NiwxMi41MjkgQzU4LjI4NiwxMy41MjQgNTguODQ4LDE0LjI3MiA2MC4wNzUsMTQuMjcyIEM2MS44MDgsMTQuMjcyIDYyLjg5NSwxMy4xNDQgNjMuMzY3LDExLjUwNCBDNjMuNDA0LDExLjM3MyA2My4zMzMsMTEuMjcgNjMuMjAzLDExLjI3IEw2Mi41MzYsMTEuMjcgQzYyLjQwMywxMS4yNyA2Mi4zMjcsMTEuMzQ0IDYyLjI5NCwxMS40NzUgQzYyLjE0OCwxMi4wNiA2MS43NzgsMTIuNjc1IDYxLjA0MywxMi42NzUgQzYwLjYyMywxMi42NzUgNjAuMzg1LDEyLjQwOCA2MC4zODUsMTEuOTUxIEM2MC4zODUsMTEuNTYxIDYxLjM5LDcuNzA5IDYxLjM5LDcuNzA5IEw2Mi45MDYsNy43MzYgTDYyLjkwNiw3LjczNiBaIE0xNi4wOTksNC4xMyBDMTYuMDUyLDQuODQ1IDE1LjQ1Myw1LjQyNiAxNC43NjMsNS40MjYgQzE0LjA3Niw1LjQyNiAxMy41NTQsNC44NDUgMTMuNjA1LDQuMTI5IEMxMy42NTYsMy40MTQgMTQuMjUxLDIuODMzIDE0Ljk0LDIuODMzIEMxNS42MjksMi44MzMgMTYuMTUsMy40MDkgMTYuMDk5LDQuMTI1IEwxNi4wOTksNC4xMyBaIE02LjQ1LDAgQzIuMjQ2LDAgMC4wMSwyLjgyNSAwLjAxLDUuOTAyIEMwLDcuMzQyIDAuNzY0LDkuMTIyIDEuOTc5LDkuNjkgQzIuMTY0LDkuNzc1IDIuMjYyLDkuNzM3IDIuMzA0LDkuNTU5IEMyLjMzNSw5LjQyMyAyLjUwMSw4Ljc2MiAyLjU3NSw4LjQ1MyBDMi42MDYsOC4zNTUgMi41OTUsOC4yNjkgMi41MTMsOC4xNzIgQzIuMTEzLDcuNjg2IDEuNzk1LDYuNzg4IDEuNzk1LDUuOTQ5IEMxLjc5NSwzLjggMy40MjYsMS43MiA2LjE5NCwxLjcyIEM4LjU5NCwxLjcyIDEwLjI2NSwzLjM1IDEwLjI2NSw1LjY4NSBDMTAuMjY1LDguMzIyIDguOTQyLDEwLjE0OCA3LjIwOSwxMC4xNDggQzYuMjU2LDEwLjE0OCA1LjUzOCw5LjM1OSA1Ljc2NCw4LjM4NyBDNi4wNDEsNy4yMjggNi41NzQsNS45NzcgNi41NzQsNS4xMzYgQzYuNTc0LDQuMzg4IDYuMTc0LDMuNzYyIDUuMzQzLDMuNzYyIEM0LjM2OSwzLjc2MiAzLjU4LDQuNzY3IDMuNTgsNi4xMzEgQzMuNTgsNi45OTIgMy44NzcsNy41NzcgMy44NzcsNy41NzcgTDIuNzA3LDEyLjQyOCBDMi40MDcsMTMuNzIgMi43NDgsMTUuODExIDIuNzc3LDE1Ljk5MyBDMi43OTIsMTYuMDkgMi45LDE2LjEyNCAyLjk2MSwxNi4wNDEgQzMuMDU4LDE1LjkxNSA0LjIyMywxNC4xNjkgNC41NTEsMTIuOTA2IEw1LjE1NiwxMC41ODggQzUuNDc3LDExLjE5MyA2LjQwNCwxMS43MDYgNy4zOTEsMTEuNzA2IEMxMC4zMzEsMTEuNzA2IDEyLjQ1LDkuMDAzIDEyLjQ1LDUuNjQ0IEMxMi40NSwyLjQyNCA5LjgyMiwwLjAxNCA2LjQ0MSwwLjAxNCBMNi40NSwwIFoiIGZpbGw9IiNiZDA4MWMiPjwvcGF0aD48L2c+PC9zdmc+) 50% 50% no-repeat;
+  background-size: 60px 15px;
+}
+ .PIN_1478160583389_embed_grid .PIN_1478160583389_ft .PIN_1478160583389_button:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_noscroll .PIN_1478160583389_bd { 
+  overflow: hidden;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_board .PIN_1478160583389_hd .PIN_1478160583389_pinner { 
+  top: 10px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_board .PIN_1478160583389_hd .PIN_1478160583389_board { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+  position: absolute;
+  bottom: 10px;
+  left: 56px;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c2 { 
+  max-width: 494px;
+  min-width: 140px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c2 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 50%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c3 { 
+  max-width: 731px;
+  min-width: 200px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c3 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 33.33%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c4 { 
+  max-width: 968px;
+  min-width: 260px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c4 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 25%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c5 { 
+  max-width: 1205px;
+  min-width: 320px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c5 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 20%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c6 { 
+  max-width: 1442px;
+  min-width: 380px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c6 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 16.66%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c7 { 
+  max-width: 1679px;
+  min-width: 440px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c7 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 14.28%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c8 { 
+  max-width: 1916px;
+  min-width: 500px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c8 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 12.5%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c9 { 
+  max-width: 2153px;
+  min-width: 560px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c9 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 11.11%;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c10 { 
+  max-width: 2390px;
+  min-width: 620px;
+}
+ .PIN_1478160583389_embed_grid.PIN_1478160583389_c10 .PIN_1478160583389_bd .PIN_1478160583389_ct .PIN_1478160583389_col { 
+  width: 10%;
+}
+ .PIN_1478160583389_embed_pin { 
+  width: 100%;
+  min-width: 160px;
+  max-width: 236px;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #000;
+  border-radius: 5px;
+  overflow: hidden;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #363636;
+  background: #fff;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+ .PIN_1478160583389_embed_pin * { 
+  display: block;
+  position: relative;
+  font: inherit;
+  cursor: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd { 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd { 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container { 
+  width: 100%;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_img,  .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_iframe,  .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_video { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: transparent url() 0 0 no-repeat;
+  background-size: cover;
+  border: none;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_native { 
+  height: 64px;
+  width: 64px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNjNweCIgd2lkdGg9IjYzcHgiIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGc+PHBhdGggZD0iTSAzMiAzMiBtIC0zMiwgMCBhIDMxLCAzMSAwIDEsIDAgNjMsIDAgYSAzMSwgMzEgMCAxLDAgLTYzLCAwIHoiIGZpbGw9IiMwMDAiPjwvcGF0aD48cGF0aCBkPSJNIDI1IDE5IEwgNDggMzIgIEwgMjUgNDUgWiIgZmlsbD0iI2ZmZiI+PC9wYXRoPjwvZz48L3N2Zz4=) 0 0 no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+  opacity: .75;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_control { 
+  width: 50px;
+  height: 24px;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, .4);
+  color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+  border: 2px solid rgba(255, 255, 255, .68);
+  border-radius: 13px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_control.PIN_1478160583389_paused::after,  .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_control.PIN_1478160583389_playing::after { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  line-height: 19px;
+  white-space: pre;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_control.PIN_1478160583389_paused::after { 
+  content: "▶ GIF";
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_control.PIN_1478160583389_playing::after { 
+  content: "❙ ❙ GIF";
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_repin { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 28px;
+  width: auto;
+  color: #fff;
+  background: #bd081c url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==) 5px 50% no-repeat;
+  background-size: 18px 18px;
+  text-indent: 28px;
+  font: 14px/28px "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0 6px 0 0;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_repin:hover { 
+  background-color: #aa0719;
+  box-shadow: none;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source { 
+  height: 38px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_img { 
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 10px;
+  height: 16px;
+  width: 16px;
+  background: transparent url() 0 0 no-repeat;
+  background-size: 16px 16px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_domain { 
+  line-height: 38px;
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: #b9b9b9;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source.PIN_1478160583389_nofav .PIN_1478160583389_img { 
+  display: none;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source.PIN_1478160583389_nofav .PIN_1478160583389_domain { 
+  max-width: 85%;
+  left: 10px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_menu { 
+  height: inherit;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_menu .PIN_1478160583389_toggle { 
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: inherit;
+  width: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNXB4IiB3aWR0aD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDUiPjxnPjxwYXRoIGQ9Ik0xNy41LDUgQzE4Ljg4MSw1IDIwLDMuODgxIDIwLDIuNSBDMjAsMS4xMTkgMTguODgxLDAgMTcuNSwwIEMxNi4xMTksMCAxNSwxLjExOSAxNSwyLjUgQzE1LDMuODgxIDE2LjExOSw1IDE3LjUsNSBaIE0xMCw1IEMxMS4zOCw1IDEyLjUsMy44ODEgMTIuNSwyLjUgQzEyLjUsMS4xMTkgMTEuMzgsMCAxMCwwIEM4LjYyLDAgNy41LDEuMTE5IDcuNSwyLjUgQzcuNSwzLjg4MSA4LjYyLDUgMTAsNSBNMi41LDUgQzMuODgxLDUgNSwzLjg4MSA1LDIuNSBDNSwxLjExOSAzLjg4MSwwIDIuNSwwIEMxLjEyLDAgMCwxLjExOSAwLDIuNSBDMCwzLjg4MSAxLjEyIDUsMi41LDUgWiIgZmlsbD0iI2I1YjViNSI+PC9wYXRoPjwvZz48L3N2Zz4=) 50% 50% no-repeat;
+  background-size: fill;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_menu .PIN_1478160583389_dropdown { 
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .33);
+  font-weight: bold;
+  font-size: 12px;
+  background: #fff;
+  text-align: left;
+  padding: 10px;
+  position: absolute;
+  max-width: 195px;
+  right: 10px;
+  top: 39px;
+  z-index: 1;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_menu .PIN_1478160583389_dropdown::after { 
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 1px;
+  border-bottom: 8px solid #fff;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_menu .PIN_1478160583389_dropdown::before { 
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 2px;
+  border-bottom: 7px solid #e2e2e2;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_description { 
+  font-size: 14px;
+  line-height: 17px;
+  margin: 8px 12px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_attribution { 
+  height: 22px;
+  margin-top: 5px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_attribution .PIN_1478160583389_img { 
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 10px;
+  height: 16px;
+  width: 16px;
+  background: transparent url() 0 0 no-repeat;
+  background-size: 16px 16px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_attribution .PIN_1478160583389_by { 
+  line-height: 22px;
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  font-weight: bold;
+  color: #b9b9b9;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_stats { 
+  height: 24px;
+  line-height: 24px;
+  margin: 0 0 0 10px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_stats .PIN_1478160583389_repins,  .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_stats .PIN_1478160583389_likes { 
+  padding-left: 17px;
+  padding-right: 10px;
+  color: #a8a8a8;
+  font-size: 11px;
+  font-weight: bold;
+  display: inline-block;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_stats .PIN_1478160583389_repins { 
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTRweCIgd2lkdGg9IjE0cHgiIHZpZXdCb3g9IjAgMCAxNCAxNCI+PGc+PHBhdGggZD0iTTExLjk3OSw2Ljg1OSBMMTMuOTksNS4wMTEgTDExLjI0MSw1LjAxMSBMMTAuNDg2LDAgTDkuNzM5LDUuMDExIEw3LDUuMDExIEw4Ljk4Niw2Ljg1OCBMOC45ODYsMTEuMDE3IEM4LjUwNSwxMC45ODUgOC4xNDMsMTEuMDEyIDguMTQzLDExLjIxMyBDOC4xNDMsMTEuNjg3IDguNTAzLDEyLjAwMSA4Ljk4NiwxMi4wMDEgTDExLjk4MiwxMiBDMTIuNDY1LDEyIDEyLjg4OCwxMS42ODYgMTIuODg4LDExLjIxMyBDMTIuODg4LDExLjAxMSAxMi40NjUsMTAuOTg1IDExLjk4MiwxMS4wMTcgTDExLjk3OSw2Ljg1OSBaIE00Ljk3OSw3LjE0MiBMNi45OSw4Ljk5IEw0LjI0MSw4Ljk5IEwzLjQ4NiwxNC4wMDEgTDIuNzM5LDguOTkgTDAsOC45OSBMMS45ODYsNy4xNDMgTDEuOTg2LDIuOTg0IEMxLjUwNSwzLjAxNiAxLjE0MywyLjk4OSAxLjE0MywyLjc4OCBDMS4xNDMsMi4zMTUgMS41MDMsMiAxLjk4NiwyIEw0Ljk4MiwyLjAwMSBDNS40NjUsMi4wMDEgNS44ODgsMi4zMTUgNS44ODgsMi43ODkgQzUuODg4LDIuOTkgNS40NjUsMy4wMTcgNC45ODIsMi45ODQgTDQuOTc5LDcuMTQyIFoiIGZpbGw9IiNiNWI1YjUiPjwvcGF0aD48L2c+PC9zdmc+) 0 50% no-repeat;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_bd .PIN_1478160583389_stats .PIN_1478160583389_likes { 
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTNweCIgd2lkdGg9IjE1cHgiIHZpZXdCb3g9IjAgMCAxNSAxMyI+PGc+PHBhdGggZD0iTTcuMzY5LDEyLjQzNyBMMS40NDEsNi40MSBDMC4yMTcsNS4xNjUgMCwzLjE1NiAxLjA2OCwxLjc3IEMyLjM0OCwwLjEwOCA0LjcyLDAgNi4xNDIsMS40NDYgTDcuMzY5LDIuNjk0IEw4LjUwNiwxLjUzOSBDOS43MywwLjI5MyAxMS43MDYsMC4wNzMgMTMuMDcsMS4xNTkgQzE0LjcwNSwyLjQ2MSAxNC44MTEsNC44NzIgMTMuMzg4LDYuMzE4IEw3LjM2OSwxMi40MzcgWiIgZmlsbD0iI2I1YjViNSI+PC9wYXRoPjwvZz48L3N2Zz4=) 0 51% no-repeat;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_ft { 
+  height: 50px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_ft:after { 
+  content: '-------------------------------------------------------------------------------------';
+  display: block;
+  height: 1px;
+  line-height: 1px;
+  color: #fff;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_ft .PIN_1478160583389_img { 
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: transparent url() 0 0 no-repeat;
+  background-size: 30px 30px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_ft .PIN_1478160583389_pinner,  .PIN_1478160583389_embed_pin .PIN_1478160583389_ft  .PIN_1478160583389_board { 
+  position: absolute;
+  left: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_ft .PIN_1478160583389_pinner { 
+  font-weight: bold;
+  top: 10px;
+}
+ .PIN_1478160583389_embed_pin .PIN_1478160583389_ft .PIN_1478160583389_board { 
+  bottom: 10px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_ja .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_repin { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNmZmYiPjwvcGF0aD48L2c+PC9zdmc+);
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_ja .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_repin.PIN_1478160583389_save { 
+  background: #bd081c url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==) 5px 50% no-repeat;
+  background-size: 16px 16px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_medium { 
+  min-width: 237px;
+  max-width: 345px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large { 
+  min-width: 345px;
+  max-width: 600px;
+  padding: 30px 34px 10px;
+  font-size: 14px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd { 
+  border-bottom: none;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_hd { 
+  padding-top: 50px;
+  border-bottom: none;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_img,  .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_container .PIN_1478160583389_video { 
+  border-radius: 8px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_hd .PIN_1478160583389_repin { 
+  top: 0px;
+  left: 0px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_source { 
+  height: 50px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_source .PIN_1478160583389_domain { 
+  line-height: 50px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_stats { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_description { 
+  font-size: 16px;
+  line-height: 20px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_menu { 
+  height: inherit;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_bd .PIN_1478160583389_menu .PIN_1478160583389_dropdown { 
+  top: 50px;
+  font-size: 14px;
+  padding: 10px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_ft { 
+  height: 60px;
+  font-size: 16px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_ft .PIN_1478160583389_board,  .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_ft .PIN_1478160583389_pinner { 
+  left: 60px;
+}
+ .PIN_1478160583389_embed_pin.PIN_1478160583389_large .PIN_1478160583389_ft .PIN_1478160583389_img { 
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  border-radius: 20px;
+}
+ .PIN_1478160583389_button_follow { 
+  display: inline-block;
+  color: #363636;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #888;
+  border-radius: 3px;
+  font: 11px "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 4px 0 20px;
+  background-color: #efefef;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+ .PIN_1478160583389_button_follow:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1478160583389_button_follow::after { 
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 3px;
+  left: 3px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+ .PIN_1478160583389_button_follow.PIN_1478160583389_tall { 
+  height: 26px;
+  line-height: 26px;
+  font-size: 13px;
+  padding: 0 6px 0 25px;
+  border-radius: 3px;
+}
+ .PIN_1478160583389_button_follow.PIN_1478160583389_tall::after { 
+  height: 18px;
+  width: 18px;
+  top: 4px;
+  left: 4px;
+  background-size: 18px 18px;
+}
+ .PIN_1478160583389_button_pin { 
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #888;
+  border-radius: 3px;
+  height: 20px;
+  width: 40px;
+  -webkit-font-smoothing: antialiased;
+  background: #efefef url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQycHgiIHZpZXdCb3g9IjAgMCA0MiAxOCI+PGc+PHBhdGggZD0iTTE2Ljg1Myw2LjM0NSBDMTcuNjMyLDYuMzQ1IDE4LjM4LDUuNzAyIDE4LjUxLDQuOTA5IEMxOC42NjQsNC4xMzggMTguMTM1LDMuNDk0IDE3LjM1NywzLjQ5NCBDMTYuNTc4LDMuNDk0IDE1LjgzLDQuMTM4IDE1LjY5OCw0LjkwOSBDMTUuNTQ2LDUuNzAyIDE2LjA1Myw2LjM0NSAxNi44NTMsNi4zNDUgWiBNNy40NTgsMCBDMi41LDAgMCwzLjUyMiAwLDYuNDU5IEMwLDguMjM3IDAuNjgsOS44MTkgMi4xMzcsMTAuNDA5IEMyLjM3NiwxMC41MDUgMi41OSwxMC40MTIgMi42NiwxMC4xNSBDMi43MDgsOS45NjkgMi44MjIsOS41MTEgMi44NzMsOS4zMiBDMi45NDMsOS4wNjEgMi45MTYsOC45NyAyLjcyMyw4Ljc0NCBDMi4zMDIsOC4yNTMgMi4wMzQsNy42MTcgMi4wMzQsNi43MTYgQzIuMDM0LDQuMTA0IDQuMDA3LDEuNzY1IDcuMTcyLDEuNzY1IEM5Ljk3NSwxLjc2NSAxMS41MTQsMy40NjEgMTEuNTE0LDUuNzI2IEMxMS41MTQsOC43MDggMTAuMTgzLDExLjE4IDguMjA2LDExLjE4IEM3LjExNCwxMS4xOCA2LjI5NywxMC4zMjkgNi41NTksOS4yMzMgQzYuODcyLDcuOTIyIDcuNDgsNi41MDkgNy40OCw1LjU2NCBDNy40OCw0LjcxNyA3LjAyMiw0LjAxMSA2LjA3Miw0LjAxMSBDNC45NTYsNC4wMTEgNC4wNiw1LjE1NSA0LjA2LDYuNjg3IEM0LjA2LDcuNjYzIDQuMzkzLDguMzIzIDQuMzkzLDguMzIzIEM0LjM5Myw4LjMyMyAzLjI1MSwxMy4xMTcgMy4wNTEsMTMuOTU3IEMyLjY1MiwxNS42MjkgMi45OTEsMTcuNjc5IDMuMDE5LDE3Ljg4NiBDMy4wMzYsMTguMDA5IDMuMTk1LDE4LjAzOCAzLjI2NywxNy45NDYgQzMuMzcsMTcuODEyIDQuNywxNi4xODcgNS4xNTEsMTQuNTYyIEM1LjI3OSwxNC4xMDIgNS44ODUsMTEuNzIgNS44ODUsMTEuNzIgQzYuMjQ4LDEyLjQwNiA3LjMwOCwxMy4wMDkgOC40MzUsMTMuMDA5IEMxMS43OSwxMy4wMDkgMTQuMDY2LDkuOTc5IDE0LjA2Niw1LjkyMyBDMTQuMDY2LDIuODU3IDExLjQ0NCwwIDcuNDU4LDAgWiBNMjYuODk2LDE0LjE4OSBDMjYuMzQ4LDE0LjE4OSAyNi4xMTcsMTMuOTE1IDI2LjExNywxMy4zMjggQzI2LjExNywxMi40MDQgMjcuMDM1LDEwLjA5MSAyNy4wMzUsOS4wNDEgQzI3LjAzNSw3LjYzOCAyNi4yNzYsNi44MjYgMjQuNzIsNi44MjYgQzIzLjczOSw2LjgyNiAyMi43MjIsNy40NTMgMjIuMjkxLDguMDAzIEMyMi4yOTEsOC4wMDMgMjIuNDIyLDcuNTUzIDIyLjQ2Nyw3LjM4IEMyMi41MTUsNy4xOTYgMjIuNDE1LDYuODg0IDIyLjE3Myw2Ljg4NCBMMjAuNjUxLDYuODg0IEMyMC4zMjgsNi44ODQgMjAuMjM4LDcuMDU1IDIwLjE5MSw3LjI0NCBDMjAuMTcyLDcuMzIgMTkuNjI0LDkuNTg0IDE5LjA5OCwxMS42MzIgQzE4LjczOCwxMy4wMzQgMTcuODYzLDE0LjIwNSAxNi45MjgsMTQuMjA1IEMxNi40NDcsMTQuMjA1IDE2LjIzMywxMy45MDYgMTYuMjMzLDEzLjM5OSBDMTYuMjMzLDEyLjk1OSAxNi41MTksMTEuODc3IDE2Ljg2LDEwLjUzNCBDMTcuMjc2LDguODk4IDE3LjY0Miw3LjU1MSAxNy42ODEsNy4zOTQgQzE3LjczMiw3LjE5MiAxNy42NDIsNy4wMTcgMTcuMzc5LDcuMDE3IEwxNS44NDksNy4wMTcgQzE1LjU3Miw3LjAxNyAxNS40NzMsNy4xNjEgMTUuNDE0LDcuMzYxIEMxNS40MTQsNy4zNjEgMTQuOTgzLDguOTc3IDE0LjUyNywxMC43NzUgQzE0LjE5NiwxMi4wNzkgMTMuODMsMTMuNDA5IDEzLjgzLDE0LjAzNCBDMTMuODMsMTUuMTQ4IDE0LjMzNiwxNS45NDQgMTUuNzI0LDE1Ljk0NCBDMTYuNzk2LDE1Ljk0NCAxNy42NDQsMTUuNDUgMTguMjkyLDE0Ljc2NCBDMTguMTk3LDE1LjEzNSAxOC4xMzYsMTUuNDE0IDE4LjEzLDE1LjQzOSBDMTguMDc0LDE1LjY1IDE4LjE0MiwxNS44MzggMTguMzk0LDE1LjgzOCBMMTkuOTYxLDE1LjgzOCBDMjAuMjMzLDE1LjgzOCAyMC4zMzcsMTUuNzMgMjAuMzk0LDE1LjQ5NCBDMjAuNDQ5LDE1LjI2OSAyMS42MTksMTAuNjY3IDIxLjYxOSwxMC42NjcgQzIxLjkyOCw5LjQ0MyAyMi42OTIsOC42MzIgMjMuNzY4LDguNjMyIEMyNC4yNzksOC42MzIgMjQuNzIsOC45NjcgMjQuNjY5LDkuNjE4IEMyNC42MTIsMTAuMzMzIDIzLjc0MSwxMi45MDMgMjMuNzQxLDE0LjAzMSBDMjMuNzQxLDE0Ljg4NCAyNC4wNiwxNS45NDUgMjUuNjgzLDE1Ljk0NSBDMjYuNzg5LDE1Ljk0NSAyNy42MDMsMTUuNDY0IDI4LjE5NSwxNC43ODYgTDI3LjQ4OSwxMy45NDEgQzI3LjMxMSwxNC4wOTQgMjcuMTE0LDE0LjE4OSAyNi44OTYsMTQuMTg5IFogTTQxLjcwMSw2Ljg3MyBMNDAuMTM0LDYuODczIEM0MC4xMzQsNi44NzMgNDAuODU2LDQuMTA5IDQwLjg3Myw0LjAzNSBDNDAuOTQyLDMuNzQ1IDQwLjY5OCwzLjU3OCA0MC40NDEsMy42MzEgQzQwLjQ0MSwzLjYzMSAzOS4yMywzLjg2NiAzOS4wMDUsMy45MTMgQzM4Ljc3OSwzLjk1OCAzOC42MDQsNC4wODEgMzguNTIyLDQuNDAzIEMzOC41MTIsNC40NDUgMzcuODgsNi44NzMgMzcuODgsNi44NzMgTDM2LjYyMiw2Ljg3MyBDMzYuMzg1LDYuODczIDM2LjI0NSw2Ljk2OCAzNi4xOTIsNy4xODggQzM2LjExNSw3LjUwNCAzNS45NzUsOC4xNDUgMzUuOTM2LDguMjk3IEMzNS44ODUsOC40OTQgMzYsOC42NDQgMzYuMjIyLDguNjQ0IEwzNy40NTcsOC42NDQgQzM3LjQ0OCw4LjY3NyAzNy4wNjQsMTAuMTI1IDM2LjcyNSwxMS41MjEgTDM2LjcyNCwxMS41MTYgQzM2LjcyLDExLjUzMiAzNi43MTYsMTEuNTQ2IDM2LjcxMiwxMS41NjIgTDM2LjcxMiwxMS41NTYgQzM2LjcxMiwxMS41NTYgMzYuNzA4LDExLjU3MSAzNi43MDIsMTEuNTk4IEMzNi4zMjQsMTIuOTY4IDM1LjExOCwxNC4yMDkgMzQuMjAxLDE0LjIwOSBDMzMuNzIxLDE0LjIwOSAzMy41MDYsMTMuOTA5IDMzLjUwNiwxMy40MDIgQzMzLjUwNiwxMi45NjMgMzMuNzkyLDExLjg4IDM0LjEzNCwxMC41MzcgQzM0LjU0OSw4LjkwMSAzNC45MTUsNy41NTUgMzQuOTU1LDcuMzk3IEMzNS4wMDYsNy4xOTYgMzQuOTE1LDcuMDIgMzQuNjUyLDcuMDIgTDMzLjEyMiw3LjAyIEMzMi44NDUsNy4wMiAzMi43NDYsNy4xNjQgMzIuNjg3LDcuMzY0IEMzMi42ODcsNy4zNjQgMzIuMjU3LDguOTggMzEuOCwxMC43NzggQzMxLjQ2OSwxMi4wODMgMzEuMTAzLDEzLjQxMiAzMS4xMDMsMTQuMDM3IEMzMS4xMDMsMTUuMTUxIDMxLjYwOSwxNS45NDggMzIuOTk3LDE1Ljk0OCBDMzQuMDcsMTUuOTQ4IDM1LjEzNiwxNS40NTMgMzUuNzgzLDE0Ljc2NyBDMzUuNzgzLDE0Ljc2NyAzNi4wMTEsMTQuNTIxIDM2LjIzLDE0LjIyOSBDMzYuMjQxLDE0LjU4MSAzNi4zMjQsMTQuODM3IDM2LjQxMSwxNS4wMTggQzM2LjQ1OCwxNS4xMTkgMzYuNTE1LDE1LjIxNSAzNi41ODEsMTUuMzAzIEMzNi41ODIsMTUuMzA0IDM2LjU4MywxNS4zMDYgMzYuNTg1LDE1LjMwOCBMMzYuNTg1LDE1LjMwOCBDMzYuODkxLDE1LjcxMyAzNy4zOTgsMTUuOTYyIDM4LjE1MSwxNS45NjIgQzM5Ljg5NCwxNS45NjIgNDAuOTQ0LDE0LjkzOCA0MS41NjIsMTMuOTA5IEw0MC43MDQsMTMuMjM5IEM0MC4zMzMsMTMuNzc0IDM5LjgzOSwxNC4xNzUgMzkuMzI0LDE0LjE3NSBDMzguODQ2LDE0LjE3NSAzOC41NzksMTMuODc4IDM4LjU3OSwxMy4zNzIgQzM4LjU3OSwxMi45MzUgMzguODg5LDExLjg2OCAzOS4yMjksMTAuNTMgQzM5LjM0NCwxMC4wODMgMzkuNTE2LDkuNDAxIDM5LjcwOCw4LjY0NCBMNDEuMzAyLDguNjQ0IEM0MS41MzksOC42NDQgNDEuNjc4LDguNTQ5IDQxLjczMiw4LjMyOSBDNDEuODA4LDguMDEyIDQxLjk0OCw3LjM3MiA0MS45ODgsNy4yMjEgQzQyLjAzOSw3LjAyMyA0MS45MjMsNi44NzMgNDEuNzAxLDYuODczIFogTTM0LjEyNiw2LjM0OCBDMzQuOTA1LDYuMzQ4IDM1LjY1Myw1LjcwNiAzNS43ODMsNC45MTIgQzM1LjkzNyw0LjE0MSAzNS40MDksMy40OTggMzQuNjMsMy40OTggQzMzLjg1MSwzLjQ5OCAzMy4xMDMsNC4xNDEgMzIuOTcxLDQuOTEyIEMzMi44MTksNS43MDYgMzMuMzI2LDYuMzQ4IDM0LjEyNiw2LjM0OCBaIiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+  background-size: 75%;
+  position: relative;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #555;
+  text-align: center;
+  vertical-align: baseline;
+}
+ .PIN_1478160583389_button_pin:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_above .PIN_1478160583389_count { 
+  position: absolute;
+  top: -28px;
+  left: 0;
+  height: 28px;
+  width: inherit;
+  line-height: 24px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzZweCIgd2lkdGg9IjExNHB4IiB2aWV3Qm94PSIwIDAgMTE0IDc2Ij48Zz48cGF0aCBkPSJNOSAxQzQuNiAxIDEgNC42IDEgOXY0M2MwIDQuMyAzLjYgOCA4IDhoMjZsMTggMTVoNy41bDE2LTE1SDEwNWM0LjQgMCA4LTMuNyA4LThWOWMwLTQuNC0zLjYtOC04LThIOXoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 40px 28px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_above.PIN_1478160583389_padded { 
+  margin-top: 28px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_beside .PIN_1478160583389_count { 
+  position: absolute;
+  right: -45px;
+  text-align: center;
+  text-indent: 5px;
+  height: inherit;
+  width: 45px;
+  font-size: 11px;
+  line-height: 20px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTZweCIgd2lkdGg9IjEyNnB4IiB2aWV3Qm94PSIyIDAgMTMwIDYwIj48Zz48cGF0aCBkPSJNMTE5LjYgMmM0LjUgMCA4IDMuNiA4IDh2NDBjMCA0LjQtMy41IDgtOCA4SDIzLjNMMS42IDMyLjR2LTQuNkwyMy4zIDJoOTYuM3oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_beside.PIN_1478160583389_padded { 
+  margin-right: 45px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_ja { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNiZDA4MWMiPjwvcGF0aD48L2c+PC9zdmc+);
+  background-size: 72%;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_red { 
+  background-color: #bd081c;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQycHgiIHZpZXdCb3g9IjAgMCA0MiAxOCI+PGc+PHBhdGggZD0iTTE2Ljg1Myw2LjM0NSBDMTcuNjMyLDYuMzQ1IDE4LjM4LDUuNzAyIDE4LjUxLDQuOTA5IEMxOC42NjQsNC4xMzggMTguMTM1LDMuNDk0IDE3LjM1NywzLjQ5NCBDMTYuNTc4LDMuNDk0IDE1LjgzLDQuMTM4IDE1LjY5OCw0LjkwOSBDMTUuNTQ2LDUuNzAyIDE2LjA1Myw2LjM0NSAxNi44NTMsNi4zNDUgWiBNNy40NTgsMCBDMi41LDAgMCwzLjUyMiAwLDYuNDU5IEMwLDguMjM3IDAuNjgsOS44MTkgMi4xMzcsMTAuNDA5IEMyLjM3NiwxMC41MDUgMi41OSwxMC40MTIgMi42NiwxMC4xNSBDMi43MDgsOS45NjkgMi44MjIsOS41MTEgMi44NzMsOS4zMiBDMi45NDMsOS4wNjEgMi45MTYsOC45NyAyLjcyMyw4Ljc0NCBDMi4zMDIsOC4yNTMgMi4wMzQsNy42MTcgMi4wMzQsNi43MTYgQzIuMDM0LDQuMTA0IDQuMDA3LDEuNzY1IDcuMTcyLDEuNzY1IEM5Ljk3NSwxLjc2NSAxMS41MTQsMy40NjEgMTEuNTE0LDUuNzI2IEMxMS41MTQsOC43MDggMTAuMTgzLDExLjE4IDguMjA2LDExLjE4IEM3LjExNCwxMS4xOCA2LjI5NywxMC4zMjkgNi41NTksOS4yMzMgQzYuODcyLDcuOTIyIDcuNDgsNi41MDkgNy40OCw1LjU2NCBDNy40OCw0LjcxNyA3LjAyMiw0LjAxMSA2LjA3Miw0LjAxMSBDNC45NTYsNC4wMTEgNC4wNiw1LjE1NSA0LjA2LDYuNjg3IEM0LjA2LDcuNjYzIDQuMzkzLDguMzIzIDQuMzkzLDguMzIzIEM0LjM5Myw4LjMyMyAzLjI1MSwxMy4xMTcgMy4wNTEsMTMuOTU3IEMyLjY1MiwxNS42MjkgMi45OTEsMTcuNjc5IDMuMDE5LDE3Ljg4NiBDMy4wMzYsMTguMDA5IDMuMTk1LDE4LjAzOCAzLjI2NywxNy45NDYgQzMuMzcsMTcuODEyIDQuNywxNi4xODcgNS4xNTEsMTQuNTYyIEM1LjI3OSwxNC4xMDIgNS44ODUsMTEuNzIgNS44ODUsMTEuNzIgQzYuMjQ4LDEyLjQwNiA3LjMwOCwxMy4wMDkgOC40MzUsMTMuMDA5IEMxMS43OSwxMy4wMDkgMTQuMDY2LDkuOTc5IDE0LjA2Niw1LjkyMyBDMTQuMDY2LDIuODU3IDExLjQ0NCwwIDcuNDU4LDAgWiBNMjYuODk2LDE0LjE4OSBDMjYuMzQ4LDE0LjE4OSAyNi4xMTcsMTMuOTE1IDI2LjExNywxMy4zMjggQzI2LjExNywxMi40MDQgMjcuMDM1LDEwLjA5MSAyNy4wMzUsOS4wNDEgQzI3LjAzNSw3LjYzOCAyNi4yNzYsNi44MjYgMjQuNzIsNi44MjYgQzIzLjczOSw2LjgyNiAyMi43MjIsNy40NTMgMjIuMjkxLDguMDAzIEMyMi4yOTEsOC4wMDMgMjIuNDIyLDcuNTUzIDIyLjQ2Nyw3LjM4IEMyMi41MTUsNy4xOTYgMjIuNDE1LDYuODg0IDIyLjE3Myw2Ljg4NCBMMjAuNjUxLDYuODg0IEMyMC4zMjgsNi44ODQgMjAuMjM4LDcuMDU1IDIwLjE5MSw3LjI0NCBDMjAuMTcyLDcuMzIgMTkuNjI0LDkuNTg0IDE5LjA5OCwxMS42MzIgQzE4LjczOCwxMy4wMzQgMTcuODYzLDE0LjIwNSAxNi45MjgsMTQuMjA1IEMxNi40NDcsMTQuMjA1IDE2LjIzMywxMy45MDYgMTYuMjMzLDEzLjM5OSBDMTYuMjMzLDEyLjk1OSAxNi41MTksMTEuODc3IDE2Ljg2LDEwLjUzNCBDMTcuMjc2LDguODk4IDE3LjY0Miw3LjU1MSAxNy42ODEsNy4zOTQgQzE3LjczMiw3LjE5MiAxNy42NDIsNy4wMTcgMTcuMzc5LDcuMDE3IEwxNS44NDksNy4wMTcgQzE1LjU3Miw3LjAxNyAxNS40NzMsNy4xNjEgMTUuNDE0LDcuMzYxIEMxNS40MTQsNy4zNjEgMTQuOTgzLDguOTc3IDE0LjUyNywxMC43NzUgQzE0LjE5NiwxMi4wNzkgMTMuODMsMTMuNDA5IDEzLjgzLDE0LjAzNCBDMTMuODMsMTUuMTQ4IDE0LjMzNiwxNS45NDQgMTUuNzI0LDE1Ljk0NCBDMTYuNzk2LDE1Ljk0NCAxNy42NDQsMTUuNDUgMTguMjkyLDE0Ljc2NCBDMTguMTk3LDE1LjEzNSAxOC4xMzYsMTUuNDE0IDE4LjEzLDE1LjQzOSBDMTguMDc0LDE1LjY1IDE4LjE0MiwxNS44MzggMTguMzk0LDE1LjgzOCBMMTkuOTYxLDE1LjgzOCBDMjAuMjMzLDE1LjgzOCAyMC4zMzcsMTUuNzMgMjAuMzk0LDE1LjQ5NCBDMjAuNDQ5LDE1LjI2OSAyMS42MTksMTAuNjY3IDIxLjYxOSwxMC42NjcgQzIxLjkyOCw5LjQ0MyAyMi42OTIsOC42MzIgMjMuNzY4LDguNjMyIEMyNC4yNzksOC42MzIgMjQuNzIsOC45NjcgMjQuNjY5LDkuNjE4IEMyNC42MTIsMTAuMzMzIDIzLjc0MSwxMi45MDMgMjMuNzQxLDE0LjAzMSBDMjMuNzQxLDE0Ljg4NCAyNC4wNiwxNS45NDUgMjUuNjgzLDE1Ljk0NSBDMjYuNzg5LDE1Ljk0NSAyNy42MDMsMTUuNDY0IDI4LjE5NSwxNC43ODYgTDI3LjQ4OSwxMy45NDEgQzI3LjMxMSwxNC4wOTQgMjcuMTE0LDE0LjE4OSAyNi44OTYsMTQuMTg5IFogTTQxLjcwMSw2Ljg3MyBMNDAuMTM0LDYuODczIEM0MC4xMzQsNi44NzMgNDAuODU2LDQuMTA5IDQwLjg3Myw0LjAzNSBDNDAuOTQyLDMuNzQ1IDQwLjY5OCwzLjU3OCA0MC40NDEsMy42MzEgQzQwLjQ0MSwzLjYzMSAzOS4yMywzLjg2NiAzOS4wMDUsMy45MTMgQzM4Ljc3OSwzLjk1OCAzOC42MDQsNC4wODEgMzguNTIyLDQuNDAzIEMzOC41MTIsNC40NDUgMzcuODgsNi44NzMgMzcuODgsNi44NzMgTDM2LjYyMiw2Ljg3MyBDMzYuMzg1LDYuODczIDM2LjI0NSw2Ljk2OCAzNi4xOTIsNy4xODggQzM2LjExNSw3LjUwNCAzNS45NzUsOC4xNDUgMzUuOTM2LDguMjk3IEMzNS44ODUsOC40OTQgMzYsOC42NDQgMzYuMjIyLDguNjQ0IEwzNy40NTcsOC42NDQgQzM3LjQ0OCw4LjY3NyAzNy4wNjQsMTAuMTI1IDM2LjcyNSwxMS41MjEgTDM2LjcyNCwxMS41MTYgQzM2LjcyLDExLjUzMiAzNi43MTYsMTEuNTQ2IDM2LjcxMiwxMS41NjIgTDM2LjcxMiwxMS41NTYgQzM2LjcxMiwxMS41NTYgMzYuNzA4LDExLjU3MSAzNi43MDIsMTEuNTk4IEMzNi4zMjQsMTIuOTY4IDM1LjExOCwxNC4yMDkgMzQuMjAxLDE0LjIwOSBDMzMuNzIxLDE0LjIwOSAzMy41MDYsMTMuOTA5IDMzLjUwNiwxMy40MDIgQzMzLjUwNiwxMi45NjMgMzMuNzkyLDExLjg4IDM0LjEzNCwxMC41MzcgQzM0LjU0OSw4LjkwMSAzNC45MTUsNy41NTUgMzQuOTU1LDcuMzk3IEMzNS4wMDYsNy4xOTYgMzQuOTE1LDcuMDIgMzQuNjUyLDcuMDIgTDMzLjEyMiw3LjAyIEMzMi44NDUsNy4wMiAzMi43NDYsNy4xNjQgMzIuNjg3LDcuMzY0IEMzMi42ODcsNy4zNjQgMzIuMjU3LDguOTggMzEuOCwxMC43NzggQzMxLjQ2OSwxMi4wODMgMzEuMTAzLDEzLjQxMiAzMS4xMDMsMTQuMDM3IEMzMS4xMDMsMTUuMTUxIDMxLjYwOSwxNS45NDggMzIuOTk3LDE1Ljk0OCBDMzQuMDcsMTUuOTQ4IDM1LjEzNiwxNS40NTMgMzUuNzgzLDE0Ljc2NyBDMzUuNzgzLDE0Ljc2NyAzNi4wMTEsMTQuNTIxIDM2LjIzLDE0LjIyOSBDMzYuMjQxLDE0LjU4MSAzNi4zMjQsMTQuODM3IDM2LjQxMSwxNS4wMTggQzM2LjQ1OCwxNS4xMTkgMzYuNTE1LDE1LjIxNSAzNi41ODEsMTUuMzAzIEMzNi41ODIsMTUuMzA0IDM2LjU4MywxNS4zMDYgMzYuNTg1LDE1LjMwOCBMMzYuNTg1LDE1LjMwOCBDMzYuODkxLDE1LjcxMyAzNy4zOTgsMTUuOTYyIDM4LjE1MSwxNS45NjIgQzM5Ljg5NCwxNS45NjIgNDAuOTQ0LDE0LjkzOCA0MS41NjIsMTMuOTA5IEw0MC43MDQsMTMuMjM5IEM0MC4zMzMsMTMuNzc0IDM5LjgzOSwxNC4xNzUgMzkuMzI0LDE0LjE3NSBDMzguODQ2LDE0LjE3NSAzOC41NzksMTMuODc4IDM4LjU3OSwxMy4zNzIgQzM4LjU3OSwxMi45MzUgMzguODg5LDExLjg2OCAzOS4yMjksMTAuNTMgQzM5LjM0NCwxMC4wODMgMzkuNTE2LDkuNDAxIDM5LjcwOCw4LjY0NCBMNDEuMzAyLDguNjQ0IEM0MS41MzksOC42NDQgNDEuNjc4LDguNTQ5IDQxLjczMiw4LjMyOSBDNDEuODA4LDguMDEyIDQxLjk0OCw3LjM3MiA0MS45ODgsNy4yMjEgQzQyLjAzOSw3LjAyMyA0MS45MjMsNi44NzMgNDEuNzAxLDYuODczIFogTTM0LjEyNiw2LjM0OCBDMzQuOTA1LDYuMzQ4IDM1LjY1Myw1LjcwNiAzNS43ODMsNC45MTIgQzM1LjkzNyw0LjE0MSAzNS40MDksMy40OTggMzQuNjMsMy40OTggQzMzLjg1MSwzLjQ5OCAzMy4xMDMsNC4xNDEgMzIuOTcxLDQuOTEyIEMzMi44MTksNS43MDYgMzMuMzI2LDYuMzQ4IDM0LjEyNiw2LjM0OCBaIiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_red.PIN_1478160583389_ja { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNmZmYiPjwvcGF0aD48L2c+PC9zdmc+);
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_white { 
+  background-color: #fff;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save { 
+  border-radius: 2px;
+  text-indent: 20px;
+  width: auto;
+  padding: 0 4px 0 0;
+  text-align: center;
+  font: 11px/20px "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background: #bd081c url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==) 3px 50% no-repeat;
+  background-size: 14px 14px;
+  -webkit-font-smoothing: antialiased;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save:hover { 
+  background-color: #aa0719;
+  box-shadow: none;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save .PIN_1478160583389_count { 
+  text-indent: 0;
+  position: absolute;
+  color: #555;
+  background: #efefef;
+  border-radius: 2px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save .PIN_1478160583389_count::before { 
+  content: "";
+  position: absolute;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save.PIN_1478160583389_beside .PIN_1478160583389_count { 
+  right: -46px;
+  height: 20px;
+  width: 40px;
+  font-size: 10px;
+  line-height: 20px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save.PIN_1478160583389_beside .PIN_1478160583389_count::before { 
+  top: 3px;
+  left: -4px;
+  border-right: 7px solid #efefef;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save.PIN_1478160583389_above .PIN_1478160583389_count { 
+  top: -36px;
+  width: 100%;
+  height: 30px;
+  font-size: 10px;
+  line-height: 30px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save.PIN_1478160583389_above .PIN_1478160583389_count::before { 
+  bottom: -4px;
+  left: 4px;
+  border-top: 7px solid #efefef;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_save.PIN_1478160583389_above.PIN_1478160583389_padded { 
+  margin-top: 28px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall { 
+  height: 28px;
+  width: 56px;
+  border-radius: 3px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_above .PIN_1478160583389_count { 
+  position: absolute;
+  height: 37px;
+  width: inherit;
+  top: -37px;
+  left: 0;
+  line-height: 30px;
+  font-size: 14px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzZweCIgd2lkdGg9IjExNHB4IiB2aWV3Qm94PSIwIDAgMTE0IDc2Ij48Zz48cGF0aCBkPSJNOSAxQzQuNiAxIDEgNC42IDEgOXY0M2MwIDQuMyAzLjYgOCA4IDhoMjZsMTggMTVoNy41bDE2LTE1SDEwNWM0LjQgMCA4LTMuNyA4LThWOWMwLTQuNC0zLjYtOC04LThIOXoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_above.PIN_1478160583389_padded { 
+  margin-top: 37px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_beside .PIN_1478160583389_count { 
+  text-indent: 5px;
+  position: absolute;
+  right: -63px;
+  height: inherit;
+  width: 63px;
+  font-size: 14px;
+  line-height: 28px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTZweCIgd2lkdGg9IjEyNnB4IiB2aWV3Qm94PSIyIDAgMTMwIDYwIj48Zz48cGF0aCBkPSJNMTE5LjYgMmM0LjUgMCA4IDMuNiA4IDh2NDBjMCA0LjQtMy41IDgtOCA4SDIzLjNMMS42IDMyLjR2LTQuNkwyMy4zIDJoOTYuM3oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_beside.PIN_1478160583389_padded { 
+  margin-right: 63px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save { 
+  border-radius: 4px;
+  width: auto;
+  background-position-x: 6px;
+  background-size: 18px 18px;
+  text-indent: 29px;
+  font: 14px/28px "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-weight: bold;
+  padding: 0 6px 0 0;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save .PIN_1478160583389_count { 
+  position: absolute;
+  color: #555;
+  font-size: 12px;
+  text-indent: 0;
+  background: #efefef;
+  border-radius: 4px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save .PIN_1478160583389_count::before { 
+  content: "";
+  position: absolute;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save.PIN_1478160583389_above .PIN_1478160583389_count { 
+  font-size: 14px;
+  top: -50px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save.PIN_1478160583389_above .PIN_1478160583389_count::before { 
+  bottom: -4px;
+  left: 7px;
+  border-top: 7px solid #efefef;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save.PIN_1478160583389_beside .PIN_1478160583389_count { 
+  font-size: 14px;
+  right: -63px;
+  width: 56px;
+  height: 28px;
+  line-height: 28px;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_tall.PIN_1478160583389_save.PIN_1478160583389_beside .PIN_1478160583389_count::before { 
+  top: 7px;
+  left: -4px;
+  border-right: 7px solid #efefef;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_round { 
+  height: 16px;
+  width: 16px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 16px 16px;
+  box-shadow: none;
+}
+ .PIN_1478160583389_button_pin.PIN_1478160583389_round.PIN_1478160583389_tall { 
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+}
+</style></head>
+
+<body>
+
+<div id="main" class="type-projectguide">
+   
+<!--[-->
+
+<div id="header" class="only-screen">
+   <a href="http://www.sciencebuddies.org/" id="header-logo"></a>
+   <div id="header-items">
+      <div class="non-icons">
+         <span><a href="https://www.sciencebuddies.org/account/login-only-popup?t=X2SsUE_s844O2M0gfuvPjyOBG_31oOvd0fN2e42s1sShQF8bmXPJmTA4Nd9q31C5LmMXhWsRq009SUmm6xCn59keubwHBSoVjDtIvhCtG619YTwGlil7qws6SL_Io4h8wgF5FCopSRmqDPls9PYYCpjtVyV7ihUw77PpXbz5hzSeXYzWtq9y3zuszBKi9XE7" class="login-link">Log In</a></span><span>|</span><span><a href="http://www.sciencebuddies.org/account/login-popup" target="_top">Create an Account</a></span>
+      </div>
+   </div>
+
+   <div id="header-search">
+   <form id="search-form" action="http://www.sciencebuddies.org/science-fair-projects/search.shtml">
+      <input type="hidden" id="search-query" name="v" value="">
+      <input id="search-input" name="s" maxlength="128" class="empty">
+      <div id="search-menu" onmouseover="$(&#39;#search-menu&#39;).addClass(&#39;selected&#39;); $(&#39;#search-dropdown&#39;).show();" onmouseout="$(&#39;#search-menu&#39;).removeClass(&#39;selected&#39;); $(&#39;#search-dropdown&#39;).hide();">
+         <div id="search-text" class="text">All Results</div>
+         <a class="arrow" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#"></a>
+         <div id="search-dropdown">
+            <div class="top"></div>
+            <div class="middle">
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;&#39;);">All Results</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;cp&#39;);">Careers</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;ha&#39;);">Fun Activities</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;ki&#39;);">Kits</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;ne&#39;);">News &amp; Blog</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;ot&#39;);">Other</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;pi&#39;);">Project Ideas</a>
+               <a class="item" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="return searchFilter(this, &#39;pg&#39;);">Resources</a>
+            </div>
+            <div class="bottom"></div>
+         </div>
+      </div>
+      <a id="search-button" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#" onclick="$(&#39;#search-form&#39;).submit(); return false;"></a>
+   </form>
+</div>
+<div id="search-empty-background"></div>
+<div id="search-empty">
+  <div id="search-empty-arrow"></div>
+  <div id="search-empty-text">Please enter a search term in the text box.</div>
+</div>
+</div>
+
+<div id="header-logo-print" class="only-print">
+   <img src="./How to Use a Breadboard_files/print-logo3.jpg" alt="" width="340" height="74">
+</div>
+<!--]-->
+
+   
+<!--[-->
+<div id="tabs" class="only-screen">
+   <a href="http://www.sciencebuddies.org/" id="tab1">Home</a>
+   <a id="tab2" href="https://store.sciencebuddies.org/" onclick="sb.funnels.step(1, &#39;A&#39;);">Store</a>
+   <a href="http://www.sciencebuddies.org/science-fair-projects/project_ideas.shtml" id="tab3">Project Ideas</a>
+   <a href="http://www.sciencebuddies.org/science-fair-projects/project_guide_index.shtml" id="tab4" class="selected">Project Guide</a>
+   <a id="tab5" href="http://www.sciencebuddies.org/science-fair-projects/ask-an-expert-intro">Ask An Expert</a>
+   <a id="tab6" href="http://www.sciencebuddies.org/blog/index.php">Blog</a>
+   <a href="http://www.sciencebuddies.org/science-engineering-careers" id="tab7">Careers</a>
+   <a href="http://www.sciencebuddies.org/science-fair-projects/teacher_resources.shtml" id="tab8">Teachers</a>
+   <a href="http://www.sciencebuddies.org/science-fair-projects/parent_resources.shtml" id="tab9">Parents</a>
+   <a href="http://www.sciencebuddies.org/science-fair-projects/student_resources.shtml" id="tab10">Students</a>
+</div>
+<!--]-->
+
+   
+<!--[-->
+
+   
+
+
+
+
+<div style="width: 100%; background-color: #e6e6e6; padding-top: 5px;" class="only-screen">
+<div style="max-width: 728px; color: #5b5b5b; margin: 0 auto; font-size: 10px;">
+<a href="https://store.sciencebuddies.org/Phys_p058/APE-5239-KIT/Colored-Fire-Kit.aspx" target="_top" onclick="sb.funnels.step(1, &#39;B&#39;); sb.ec.trackClick(&#39;APE-5239-KIT&#39;, &#39;Rainbow Fire&#39;, 59.95, &#39;Banner Ad&#39;, 1, true); sb.track(false, &#39;Features-Clicks&#39;, &#39;Rainbow Fire&#39;, &#39;rainbowfire-minfireworks&#39;);">
+<img src="./How to Use a Breadboard_files/rainbowfire-minfireworks.png" width="728" height="90" alt="">
+</a>
+</div>
+</div>
+<script type="text/javascript">
+$(function () {
+sb.ec.trackImpression('APE-5239-KIT', 'Rainbow Fire', 59.95, 'Banner Ad', 1, true);
+});
+</script>		  
+
+
+
+<!--]-->
+
+   <div id="content" class="type-projectguide">
+      
+<div id="title">
+
+
+
+
+   <div style="float: right;">
+         <a href="http://www.sciencebuddies.org/account/login-classroom-only-popup?t=mlWzVWCoq86DXZOEgWEuvkQUgQjsDwJZwmhqT7ZN8HNjAiClcupIS7al5EvjOJ3ulovmOXiOcllYYreomhcwh5CaWWATDd-1yhmV3Phd0rFJ6sBwrGiSklRTUcvYsSSXy4QKmQTaqKqFrwaLnEp8SgSpg7iO9zAShjk4aUOSluuDwXUv554WzIacwAuxHkOYYPcYX2V3TiaAAg3lxp9dqyoicrn-p5AADu5xJLR1EgbF3azf9GdNeQqG1VR0JnnBAWyDyPdvoDM" class="gc-button only-screen">Create Assignment</a>
+   </div>
+
+   <h1>How to Use a Breadboard </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="classroom-work-form">
+
+
+
+</form>
+
+      
+<!--[-->
+<noscript class="only-screen no-js">
+Please ensure you have JavaScript enabled in your browser.  If you leave JavaScript disabled, you will only access a portion of the content we are providing. &lt;a href="/science-fair-projects/javascript_help.php"&gt;Here's how.&lt;/a&gt;
+</noscript>
+<!--]-->
+
+
+      
+<!--[-->
+
+<div id="menu-icons" class="nosubtab">
+   <div class="item">
+      <a class="email email-link" href="http://www.sciencebuddies.org/science-fair-projects/email_this.php?filename=%2Fscience-fair-projects%2Fhow-to-use-a-breadboard.shtml&amp;title=How%20to%20Use%20a%20Breadboard">Email</a>
+   </div>
+   <div class="item">
+      <a class="print print-link" href="javascript:window.print();">Print</a>
+   </div>
+</div>
+<!--]-->
+
+
+
+
+<p>Many electronics projects use something called a <b>breadboard</b>.  What is a breadboard, and how do you use it? This tutorial video will give you a basic introduction to breadboards and explain how to use them in beginner electronics projects; you can also read more details and see more examples in the text sections.</p>
+
+
+
+<div class="content-video page-break-avoid">
+
+<div class="video only-screen;">
+   <iframe width="560" height="315" src="./How to Use a Breadboard_files/6WReFkfrUIk.html" class="" style="border: none; "></iframe><br>
+  
+</div> 
+<div class="only-print">
+      <a href="http://www.youtube.com/watch?v=6WReFkfrUIk">http://www.youtube.com/watch?v=6WReFkfrUIk</a>
+</div>
+</div>
+
+
+
+<h2>More About Breadboards</h2>
+<ul>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#introduction">Introduction</a>
+<ul>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#what-breadboard">What is a breadboard?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#name-breadboard">Where does the name "breadboard" come from?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#kinds-breadboard">Are there different kinds of breadboards?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#solderless-breadboard">What is a "solderless" breadboard?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#electronic-breadboard">Which electronic parts are compatible with breadboards?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#tools-breadboard">Do I need any tools to use a breadboard?</a></li>
+</ul></li>
+
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#inside-breadboard">What is inside a breadboard? How do they work?</a></li>
+
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#breadboard-labels">Breadboard labels: rows, columns, and buses</a>
+<ul>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#letters">What do the letters and numbers on a breadboard mean?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#lines">What do the colored lines and plus and minus signs mean?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#holes">How are the holes connected?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#labeled">Are all breadboards labeled the same way?</a></li>
+</ul></li>
+
+
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#using-breadboard">Using a breadboard</a>
+<ul>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#breadboard-diagram">What is a breadboard diagram?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#circuit-match">Does my circuit have to match the breadboard diagram exactly?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#jumper-wires">What are jumper wires and what kind should I use?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#color-code">Should I color-code my circuit?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#build-circuit">How do I build my circuit?</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#test-circuit">How do I test my circuit?</a></li>
+</ul></li>
+
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#common-mistakes">Common mistakes</a>
+<ul>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#row-numbers">Getting row numbers wrong</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#power">Getting power and ground mixed up</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#pushing">Not pushing leads and wires in all the way</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#backwards">Putting components in backwards</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#short-circuits">Short circuits</a></li>
+</ul></li>
+
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#advanced-notes">Advanced notes</a>
+<ul>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#integrated-circuits">Integrated circuits (IC)</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#circuit-diagrams">Circuit diagrams</a></li>
+<li><a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#pth-smd">Through-hole vs. surface mount parts</a></li>
+</ul></li>
+
+</ul>
+
+<hr>
+<h2 id="introduction">Introduction</h2>
+
+<h3 id="what-breadboard">What is a breadboard?</h3>
+
+<p>A breadboard is a rectangular plastic board with a bunch of tiny holes in it. These holes let you easily insert electronic components to <b>prototype</b> (meaning to build and test an early version of) an electronic circuit, like this one with a battery, switch, resistor, and an LED (light-emitting diode). To learn more about individual electronic components, see our 
+<a href="http://www.sciencebuddies.org/science-fair-projects/project_ideas/Elec_primer-intro.shtml">Electronics Primer</a>.</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/basic-LED-circuit.jpg" alt="basic LED circuit on solderless breadboard" width="500" height="438" class="search-thumbnail">
+</div>
+
+
+
+<p>The connections are not permanent, so it is easy to <i>remove</i> a component if you make a mistake, or just start over and do a new project. This makes breadboards great for beginners who are new to electronics. You can use breadboards to make all sorts of fun electronics projects, from different types of robots or an electronic drum set, to an electronic rain detector to help conserve water in a garden, just to name a few.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+
+<img src="./How to Use a Breadboard_files/rain-detector-prototype.jpg" alt="prototype of a rain detector circuit" width="700" height="481" style="width:400px; height:275px;">&nbsp;
+<img src="./How to Use a Breadboard_files/light-tracking-bristlebot.jpg" alt="A light-following bristlebot." width="600" height="546" style="width:400px; height:319px;"><br>
+<img src="./How to Use a Breadboard_files/electronic-drumset.jpg" alt="raspberry electronic drumset" width="493" height="450" style="width:400px; height:365px;">&nbsp;
+<img src="./How to Use a Breadboard_files/line-following-robot.jpg" alt="line following robot" width="500" height="375" style="width:400px; height:300px;">
+
+</div>
+
+
+   
+
+<h3 id="name-breadboard">Where does the name "breadboard" come from? </h3>
+
+<p>You might be wondering what any of this has to do with bread. The term <i>breadboard</i> comes from the early days of electronics, when people would literally drive nails or screws into wooden boards on which they cut bread in order to connect their circuits. Luckily, since you probably do not want to ruin all your cutting boards for the sake of an electronics project, today there are better options.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/wooden-breadboard.jpg" alt="wooden breadboard circuit" width="600" height="401">
+</div>
+
+
+
+<h3 id="kinds-breadboard">Are there different kinds of breadboards? </h3>
+
+<p>Modern breadboards are made from plastic, and come in all shapes, sizes, and even different colors. While larger and smaller sizes are available, the most common sizes you will probably see are "full-size," "half-size," and "mini" breadboards. Most breadboards also come with tabs and notches on the sides that allow you to snap multiple boards together. However, a single half-sized breadboard is sufficient for many beginner-level projects.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-sizes.jpg" alt="different solderless breadboard sizes" width="500" height="428">
+</div>
+ 
+
+<h3 id="solderless-breadboard">What is a "solderless" breadboard? </h3>
+
+<p>Technically, these breadboards are called <b>solderless</b> breadboards because they do not require soldering to make connections. <b>Soldering</b> (pronounced SAW-der-ing) is a method where electronic components are joined together by melting a special type of metal called <b>solder</b>. Electronic components can be soldered directly together, but more commonly they are soldered onto <b>printed circuit boards</b> (PCBs). PCBs are what you will see if you take the cover off many electronic devices, like a computer or cell phone. Frequently, engineers will use solderless breadboards to prototype and test a circuit before building the final, permanent design on a PCB. This image shows the same circuit (battery, switch, resistor, and LED) built three different ways: on a solderless breadboard (left), with the components soldered directly together (middle), and on a printed circuit board (right):
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/battery-resistor-LED-circuit.jpg" alt="soldered and solderless basic circuits with battery, resistor, and LED" width="700" height="313">
+</div>
+
+
+
+
+<p>Soldering is a great technique to learn if you are interested in electronics, but the connections are much more permanent and it requires purchasing some tools to get started. The rest of this tutorial will focus on solderless breadboards, but you can read our 
+<a href="http://www.sciencebuddies.org/science-fair-projects/project_ideas/Elec_primer-solder.shtml">soldering tutorial</a>
+ to learn more about soldering.</p>
+
+ 
+<h3 id="electronic-breadboard">  Which electronic parts are compatible with breadboards? </h3>
+
+<p>So, how do electronic components fit into a breadboard? Many electronic components have long metal legs called <b>leads</b> (pronounced "leeds"). Sometimes, shorter metal legs are referred to as <b>pins</b> instead. Almost all components with leads will work with a breadboard (to learn more about these components and which types work with a breadboard, see the 
+<a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#pth-smd">Advanced</a> section).</p>
+
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/electronic-component-leads.jpg" alt="electronic circuit component metal leads" width="650" height="499">
+</div>
+
+
+
+<p>Breadboards are designed so you can push these leads into the holes. They will be held in place snugly enough that they will not fall out (even if you turn the breadboard upside-down), but lightly enough that you can easily pull on them to remove them.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-hole-leads.jpg" alt="electronic components inserted into a breadboard" width="500" height="484">
+</div>
+
+
+
+
+<h3 id="tools-breadboard">Do I need any tools to use a breadboard?</h3>
+
+<p>You do not need any special tools to use a solderless breadboard. However, many electronic components are very tiny, and you may find them difficult to handle. A pair of <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fStoreCatalogDrillDownView%3flangId%3d-1%26storeId%3d10001%26catalogId%3d10001%26freeText%3dneedle%2520nose%2520pliers%26search_type%3djamecoall">miniature needle nose pliers</a> or <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fStoreCatalogDrillDownView%3flangId%3d-1%26storeId%3d10001%26catalogId%3d10001%26freeText%3dtweezers%26search_type%3djamecoall">tweezers</a> may make it easier to pick up small components.
+</p>
+
+<h2 id="inside-breadboard">What is inside a breadboard?</h2>
+
+<p>The leads can fit into the breadboard because the <i>inside</i> of a breadboard is made up of rows of tiny metal clips. This is what the clips look like when they are removed from a breadboard.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-clips.jpg" alt="breadboard spring clips" width="250" height="226">
+</div>
+ 
+
+
+<p>When you press a component's lead into a breadboard hole, one of these clips grabs onto it.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-component-clip.jpg" alt="component inserted into breadboard clip" width="250" height="422">
+</div>
+
+
+<p>Some breadboards are actually made of transparent plastic, so you can see the clips inside.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/transparent-breadboard-clips.jpg" alt="transparent breadboard clips" width="500" height="185">
+</div>
+ 
+
+<p>Most breadboards have a backing layer that prevents the metal clips from falling out. The backing is typically a layer of sticky, double-sided tape covered by a protective layer of paper. If you want to permanently "stick" the breadboard to something (for example, a robot), you just need to peel off the paper layer to expose the sticky tape underneath. In this picture, the breadboard on the right has had its backing removed completely (so you can see all the metal clips). The breadboard on the left still has its sticky backing, with one corner of the paper layer peeled up.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-backing.jpg" alt="breadboard adhesive backing" width="500" height="388">
+</div>
+
+
+
+
+<h2 id="breadboard-labels">Breadboard labels: rows, columns, and buses</h2>
+
+<h3 id="letters">What do the letters and numbers on a breadboard mean?</h3>
+
+<p>Most breadboards have some numbers, letters, and plus and minus signs written on them. What does all that mean? While their exact appearance might vary from breadboard to breadboard, the general purpose is always the same. These labels help you locate certain holes on the breadboard so you can follow directions when building a circuit. If you have ever used a spreadsheet program like Microsoft Excel® or Google Sheets™, the concept is exactly the same. Row numbers and column letters help you identify individual holes in the breadboard, just like cells in a spreadsheet. For example, all of the highlighted holes are in "column C."
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-column-C.png" alt="breadboard column C" width="300" height="469">
+</div>
+ 
+
+
+<p>All of the highlighted holes are in "row 12."
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-row-12.png" alt="breadboard row 12" width="300" height="469">
+</div>
+  
+
+
+<p>"Hole C12" is where column C intersects row 12.</p> 
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-hole-C12.png" alt="breadboard hole C12" width="300" height="469">
+</div>
+  
+
+
+<h3 id="lines"> What do the colored lines and plus and minus signs mean? </h3>
+
+<p>What about the long strips on the side of the breadboard, highlighted in yellow here?</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/power-bus-highlights.png" alt="breadboard power and ground buses" width="300" height="469">
+</div>
+ 
+
+<p>These strips are typically marked by red and blue (or red and black) lines, with plus (+) and minus (-) signs, respectively. They are called the <b>buses</b>, also referred to as <b>rails</b>, and are typically used to supply electrical power to your circuit when you connect them to a battery pack or other external power supply. You may hear the buses referred to by different names; for example, <i>power bus</i>, <i>positive bus</i>, and <i>voltage bus</i> all refer to the one next to the red line with the plus (+) sign. Similarly, <i>negative bus</i> and <i>ground bus</i> both refer to one next to the blue (or black) line with the minus (-) sign. Sound confusing? Use this table to help you remember—there are different ways to refer to the buses, but they all mean the same thing. Do not worry if you see them referred to by different names in different places (for example, in different Science Buddies projects or other places on the internet). Sometimes you might hear "power buses" (or rails) used to refer to <i>both</i> of the buses (or rails) together, not just the positive one.
+</p>
+
+
+<div class="content-table page-break-avoid" style="width: Auto;">
+
+<table>
+<thead>
+<tr><th>Positive</th>	<th>Negative</th></tr>
+</thead>
+<tbody>
+<tr><td>Power</td>	<td>Ground</td></tr>
+<tr><td>Plus sign (+)</td>	<td>Minus sign (-)</td></tr>
+<tr><td>Red</td>	<td>Blue or black</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<p>Note that there is no physical difference between the positive and negative buses, and using them is not a requirement. The labels just make it easier to organize your circuit, similar to <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#color-code">color-coding your wires</a>.
+</p>
+
+<h3 id="holes">How are the holes connected?</h3>
+
+<p>Remember that the inside of the breadboard is made up of sets of five metal clips. This means that each set of five holes forming a half-row (columns A–E or columns F–J) is electrically connected. For example, that means hole A1 is electrically connected to holes B1, C1, D1, and E1. It is <i>not</i> connected to hole A2, because that hole is in a different row, with a separate set of metal clips. It is also <i>not</i> connected to holes F1, G1, H1, I1, or J1, because they are on the other "half" of the breadboard—the clips are not connected across the gap in the middle (to learn about the gap in the middle of the breadboard, see the <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#integrated-circuits">Advanced</a> section). Unlike all the main breadboard rows, which are connected in sets of five holes, the buses typically run the entire length of the breadboard (but there are some exceptions). This image shows which holes are electrically connected in a typical half-sized breadboard, highlighted in yellow lines.
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-row-connections.png" alt="breadboard hole electrical connections" width="300" height="469">
+</div>
+  
+
+
+<p>Buses on opposite sides of the breadboard are <i>not</i> connected to each other. Typically, to make power and ground available on both sides of the breadboard, you would connect the buses with jumper wires, like this. Make sure to connect positive to positive and negative to negative (see the section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#lines">buses</a> if you need a reminder about which color is which).
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/power-bus-jumpers.jpg" alt="breadboard power bus jumper wires" width="400" height="287">
+</div>
+ 
+
+
+<h3 id="labeled"> Are all breadboards labeled the same way? </h3>
+
+<p>Note that exact configurations might vary from breadboard to breadboard. For example, some breadboards have the labels printed in "landscape" orientation instead of "portrait" orientation. Some breadboards have the buses broken in half along the length of the breadboard (useful if you need to supply your circuit with two different voltage levels). Most "mini" breadboards do not have buses or labels printed on them at all. 
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/different-breadboards.jpg" alt="different full-size breadboards" width="600" height="437">
+</div>
+ 
+
+
+<p>There may be small differences in how the buses are labeled from breadboard to breadboard. Some breadboards only have the colored lines and no plus (+) or minus (-) signs. Some breadboards have the positive buses on the left and the negative buses on the right, and on other breadboards, this is reversed. Regardless of how they are labeled and the left⁄right positions, the function of the buses remains the same.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-power-buses.jpg" alt="breadboards with power buses reversed" width="500" height="371">
+</div>
+
+
+
+<h2 id="using-breadboard">Using a breadboard</h2>
+<h3 id="breadboard-diagram">What is a breadboard diagram?</h3>
+
+<p>A <b>breadboard diagram</b> is a computer-generated drawing of a circuit on a breadboard. Unlike a <b>circuit diagram</b> or a <b>schematic</b> (which use symbols to represent electronic components; see the <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#circuit-diagrams">Advanced</a> section to learn more), breadboard diagrams make it easy for beginners to follow instructions to build a circuit because they are designed to look like the "real thing." For example, this diagram (made with a free program called <a href="http://fritzing.org/home/">Fritzing</a>) shows a basic circuit with a battery pack, an LED, a resistor, and a pushbutton, which looks very similar to the physical circuit:
+</p>
+   
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/example-breadboard-diagram.jpg" alt="breadboard circuit diagram" width="350" height="383">&nbsp;
+<img src="./How to Use a Breadboard_files/LED-button-breadboard.jpg" alt="LED circuit on breadboard" width="350" height="387">
+</div>
+
+
+
+<p>Sometimes, breadboard diagrams might be accompanied by (or replaced with) written directions that tell you where to put each component on the breadboard. For example, the directions for this circuit might say:
+</p>
+
+<ol>
+ <li>Connect the battery pack's red lead to the power bus.</li>
+ <li>Connect the battery pack's black lead to the ground bus.</li>
+ <li>Connect the resistor from hole B12 to the ground bus.</li>
+ <li>Insert the pushbutton's four pins into holes E10, F10, E12, and F12.</li>
+ <li>Insert the LED's long lead into the power bus, and the short lead into hole J10.</li>
+</ol>
+
+<p>This information can also be formatted as a table:</p>
+
+
+
+<div class="content-table page-break-avoid" style="width: Auto;">
+
+<table>
+<thead>
+<tr><th>Component</th>	<th>Picture</th>	<th>Symbol</th>	<th>Location</th></tr>
+</thead>
+<tbody>
+
+<tr style="background-color:#ffffff;">
+<td>Battery pack</td>	
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/2xAA-battery-holder.jpg" alt="2 AA battery holder" width="200" height="113"></div>
+   </td>
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/2xAA-battery-holder-symbol.jpg" alt="breadboard symbol for 2xAA battery holder" width="175" height="91"></div>
+   </td>
+<td>Red lead to (+) bus<br>
+Black lead to (-) bus</td>
+</tr>
+<tr style="background-color:#ffffff;">
+<td>LED	</td>
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/red-LED.jpg" alt="red LEd" width="200" height="128"></div>
+ </td>
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/LED-symbol.jpg" alt="breadboard symbol for LED" width="200" height="70"></div>
+ </td>
+<td>Long lead to (+) bus<br>
+Short lead to J10</td>
+</tr>
+<tr style="background-color:#ffffff;">
+<td>Pushbutton</td>	 
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/pushbutton.jpg" alt="pushbutton switch" width="175" height="181"></div>
+ </td>
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/pushbutton-symbol.png" alt="breadboard symbol for pushbutton switch" width="110" height="85"></div>
+</td>
+<td>Holes E10, F10, E12, F12</td>
+</tr>
+<tr style="background-color:#ffffff;">
+<td>Resistor</td>	 
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/47-ohm-resistor.jpg" alt="47 ohm resistor" width="200" height="111"></div>
+ </td>	 
+<td>
+<div class="content-image page-break-avoid" style="text-align: center;">
+ <img src="./How to Use a Breadboard_files/47-ohm-resistor-symbol.png" alt="breadboard symbol for 47 ohm resistor" width="134" height="46"></div>
+ </td>	
+<td>Hole B12 to (-) bus</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+
+<h3 id="circuit-match">  Does my circuit have to match the breadboard diagram exactly? </h3>
+
+<p>The short answer is "no." However, when you are first starting out using breadboards, it is probably best to follow the breadboard diagrams exactly.
+</p>
+<p>To understand this, it helps to understand <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#holes">how a breadboard's holes are electrically connected</a>. There are different ways to change the <i>physical</i> layout of a circuit on a breadboard without actually changing the <i>electrical</i> connections. For example, these two circuits are electrically identical; even though the leads of the LED have moved, there is still a complete path (called a <b>closed circuit</b>) for electricity to flow through the LED (highlighted with yellow arrows). So, even if the directions say "put the LED's long lead in hole F10," the circuit will still work if you put it in hole F12 instead (but <i>not</i> if you put it in hole F9 or F11, because different rows are not connected).
+</p>
+  
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/LED-equivalent-circuit-1.png" alt="LED breadboard circuit 1" width="339" height="309">&nbsp;
+<img src="./How to Use a Breadboard_files/LED-equivalent-circuit-2.png" alt="LED breadboard circuit 2" width="339" height="309">
+</div>
+
+
+
+<p>However, you can also completely rearrange the components on the breadboard. As long as the circuit is <i>electrically</i> equivalent, it will still work. Even though this circuit "looks different" than the previous two because the components have been rearranged, electricity still follows an equivalent path through the LED and the resistor.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/LED-equivalent-circuit-3.png" alt="LED breadboard circuit 3" width="339" height="309">
+</div>
+
+
+
+
+<h3 id="jumper-wires"> What are jumper wires and what kind should I use? </h3>
+
+<p>Jumper wires are wires that are used to make connections on a breadboard. They have stiff ends that are easy to push into the breadboard holes. There are several different options available when purchasing jumper wires.
+</p>
+<p><a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fProduct_10001_10001_2150467_-1">Flexible jumper wires</a> are made of a flexible wire with a rigid pin attached to both ends. These wires usually come in packs of varying colors. This makes it easy to color-code your circuit (see the section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#color-code">color-coding</a>). While these wires are easy to use for beginner circuits, they can get very messy for more complicated circuits; because they are so long, you will wind up with a tangled nest of wires that are hard to trace (sometimes called a "rat's nest" or "spaghetti").
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/flexible-jumper-wires.jpg" alt="flexible breadboard jumper wires" width="500" height="493">
+</div>
+ 
+
+
+<p>Jumper wire kits are packs of pre-cut lengths of wire that have their ends bent down 90 degrees, so they are ready to put into a breadboard. The kits are available in <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fProduct_10001_10001_19290_-1">larger</a> and <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fProduct_10001_10001_2127718_-1">smaller</a> sizes. These kits are very convenient because they come with wires of many different pre-cut lengths. The disadvantage is that there is typically only one length of each color. This can make it difficult to color-code your circuit (for example, you might want a long black wire, but your kit might only have short black wires). Your circuit will still work just fine, but color-coding can help you stay more organized (again, see the section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#color-code">color-coding</a> for more information). Notice how this circuit looks much less messy than the previous one, since the wires are shorter.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-jumper-wire-kit.jpg" alt="breadboard jumper wire kit" width="600" height="434">
+</div>
+ 
+
+
+<p>Finally, you can also buy spools of <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fStoreCatalogDrillDownView%3flangId%3d-1%26storeId%3d10001%26catalogId%3d10001%26freeText%3dsolid%2520hookup%2520wire%26search_type%3djamecoall">solid-core hookup wire</a> and a pair of <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fStoreCatalogDrillDownView%3flangId%3d-1%26storeId%3d10001%26catalogId%3d10001%26freeText%3dwire%2520strippers%26search_type%3djamecoall">wire strippers</a> and cut your own jumper wires. This is the best long-term option if you plan on doing lots of electronics projects, because you can cut wires to the exact length you need, and pick which colors you want. It is also much more cost-effective per length of wire. Buying a <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fProduct_10001_10001_2153705_-1">kit of six different colors</a> is a good place to start. It is important to buy <b>solid core</b> wire (which is made from a single, solid piece of metal) and not <b>stranded</b> wire (which is made from multiple, smaller strands of wire, like a rope). Stranded wire is much more flexible, so it is very hard to push into a breadboard's holes. You also need to purchase the right <b>wire gauge</b>, which is a way of measuring wire diameter. 22 AWG (American Wire Gauge) is the most common gauge used for breadboards. To learn more about wire gauge and how to strip wire, see the Science Buddies <a href="http://www.sciencebuddies.org/science-fair-projects/wire_stripping_tutorial.shtml">Wire Stripping Tutorial</a>. Notice how in this circuit, red and black are used for all the connections to the buses (see the section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#color-code">color-coding</a> to learn more).
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/hookup-wire.jpg" alt="breadboard hookup wire" width="500" height="414">
+</div>
+ 
+
+
+
+<h3 id="color-code">Should I color-code my circuit? </h3>
+
+<p>Whether or not you color-code your circuit depends largely on what type of jumper wire you purchase (see the question about <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#jumper-wires">jumper wires</a>). Color-coding is a matter of convenience in that it can help you stay more organized, but using different color wires will not change how your circuit works. <b>Important</b>: This statement only applies to <b>jumper wires</b>. Some circuit components, like battery packs and certain sensors, come with colored wires already attached to them. Keeping track of these colors <i>does</i> matter (for example, do not get the red and black leads on a battery pack mixed up). All jumper wires, however, are just metal on the inside with colored plastic insulation on the outside. The color of the plastic does not affect how electricity flows through the wire.
+</p>
+<p>In electronics, it is generally standard to use red wire for positive (+) connections and black wire for negative (-) connections. What other colors you use is largely a matter of choice and will depend on the specific circuit you are building. For example, there are a few different ways you could wire this circuit with red, green, blue, and yellow LEDs, but they will all work exactly the same:
+</p>
+
+<ul>
+	<li>If you purchased a pre-cut jumper wire kit, use whatever wire colors are available at the appropriate lengths (left image).</li>
+	<li>Use red and black wires for the positive and negative sides of each LED, respectively (center image).</li>
+	<li>Only use red and black wires for the bus connections, and use red, green, blue, and yellow wire for the respective LEDs (right image).</li>
+</ul>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/jumper-wire-color-options.jpg" alt="breadboard jumper wire color coding" width="950" height="238">
+</div>
+ 
+
+
+<p>Remember the important part: <i>the color of the wires does not affect how the circuit works!</i> The three circuits in this image will all work exactly the same (the LEDs will light up when the battery pack is turned on) even though they have different color wires. If a breadboard diagram shows a blue wire and you use an orange wire instead, nothing will be wrong with your circuit.
+</p>
+
+<h3 id="build-circuit">How do I build a circuit? </h3>
+
+<p>To build a circuit:</p>
+<ul>
+	<li>Follow the <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#breadboard-diagram">breadboard diagram</a> for the circuit, connecting one component at a time.</li>
+	<li>Always connect the batteries or power supply to your circuit <i>last</i>. This will give you a chance to double-check all your connections before you turn your circuit on for the first time.</li>
+	<li>Keep an eye out for <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#common-mistakes">common mistakes</a> that many beginners make when using a breadboard.</li>
+</ul>
+
+<h3 id="test-circuit">How do I test my circuit? </h3>
+
+<p>How you test your circuit will depend on the specific circuit you are building. In general, you should follow this procedure:
+</p>
+
+<ul>
+	<li>Double-check your circuit and the breadboard diagram to make sure all your components are in the right place.</li>
+	<li>Check what your circuit is supposed to do according to the project directions. Is it supposed to flash lights, make noise, somehow respond to a sensor (like a motion or light sensor), or make a robot move? Many Science Buddies projects will contain a written description and/or video of how your circuit should work.</li>
+	<li>Turn the power to your circuit on (for example, by sliding a battery pack switch from OFF to ON). If you see or smell smoke, turn off or disconnect the power supply <i>immediately</i>. This means you have a <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#short-circuits">short circuit</a>.</li>
+	<li>Follow the project directions to use your circuit (for example, shining a flashlight at a light-tracking robot, or waving your hand in front of a motion sensor). </li>
+	<li>If your circuit does not work, you need to troubleshoot (or <b>debug</b>, meaning to look for problems or "bugs" in your circuit). See the <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#common-mistakes">common mistakes</a> section for things you should check.</li>
+</ul>
+
+<h2 id="common-mistakes">Common mistakes</h2>
+
+<h3 id="row-numbers">Getting row numbers wrong</h3>
+
+<p>Can you spot the difference between these two circuits?</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/dual-LED-circuits.jpg" alt="dual-LED-circuits.jpg  breadboard circuit with jumper wire in wrong row" width="950" height="453">
+</div>
+ 
+
+
+<p>At first glance, they might look exactly the same. However, when we turn the battery packs on, only the LED on the left lights up. What is wrong?
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/dual-LED-circuits-on.jpg" alt="dual-LED-circuits-on" width="950" height="453">
+</div>
+ 
+
+
+<p>Let us take a look at the breadboard diagram for the circuit to see if we can spot the problem. The circuit should match this diagram:
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/example-LED-circuit-breadboard.png" alt="example LED circuit breadboard diagram" width="339" height="314">
+</div>
+  
+
+
+<p>Now, let us take a closer look at the two circuits. Carefully compare the two pictures to the breadboard diagram. Can you spot what is wrong? If you still cannot tell, click on the image to reveal the problem.
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+
+<img src="./How to Use a Breadboard_files/breadboard-wrong-row-close_off.jpg" class="img-swap" alt="breadboard wrong row close" style="cursor: pointer; cursor: hand;">
+</div>
+
+
+ 
+
+<p>Do you see the problem yet? In the circuit on the left, the red jumper wire goes from the positive bus to hole J10, which matches the breadboard diagram. In the circuit on the right, it goes from the positive bus to hole <i>J9</i>. Remember from the section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#holes">how the holes are connected</a>  that holes in different rows are not electrically connected to each other. So, with the jumper wire in row 9 and the LED in row 10, there is no way for electricity to flow to the LED. 
+</p>
+<p>It can be difficult to spot such a tiny error! However, it only takes one misplaced wire or component lead to stop a circuit from working completely. This is why you should always carefully check and double-check your wiring before you test a circuit. If your circuit is not working, carefully double-check all your connections and make sure to count the row numbers.
+</p>
+
+<h3 id="power"> Getting power and ground mixed up</h3>
+
+<p>Similar to getting row numbers wrong, getting the power and ground buses mixed up is another common mistake. Can you spot the difference between these two circuits? Only the LED on the left lights up.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-wrong-bus-1.jpg" alt="breadboard wrong power bus" width="950" height="428">
+</div>
+ 
+
+
+<p>Let us take a closer look at the circuits. Can you spot what is wrong? Click on the image to reveal the problem.
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+
+<img src="./How to Use a Breadboard_files/breadboard-wrong-bus-2_off.jpg" class="img-swap" alt="breadboard wrong bus 2" style="cursor: pointer; cursor: hand;">
+</div>
+
+
+
+
+<p>Do you see the problem yet? In the photo on the left, the red jumper wire goes to the positive (+) bus. In the photo on the right, it goes to the negative (-) bus. According to the breadboard diagram from the <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#row-numbers">previous section</a>, it should go to the positive (+) bus. Remember that "positive" and "negative" can also be referred to as "power" and "ground." See the section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#lines">buses</a> if you need a reminder.
+</p>
+<p>How about the difference between these two circuits? Again, only the LED on the left lights up.</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-wrong-bus-4.jpg" alt="breadboard battery pack leads switched" width="950" height="428">
+</div>
+ 
+ 
+
+<p>Take a closer look to see if you can spot the problem (click on the image to reveal it).</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+
+<img src="./How to Use a Breadboard_files/breadboard-wrong-bus-5_off.jpg" class="img-swap" alt="breadboard wrong bus 5" style="cursor: pointer; cursor: hand;">
+</div>
+
+
+
+
+<p>This time, the battery pack leads are reversed. The red lead is connected to the negative (-) bus and the black lead is connected to the positive (+) bus. Remember that unlike with <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#jumper-wires">jumper wires</a>, the colors of battery pack leads <i>do</i> matter. Red is used for positive and black is used for negative.
+</p>
+<p>Finally, remember on some breadboards the positive bus is on the left and the negative bus is on the right. On other breadboards this is reversed. Be careful when you switch between breadboards since the left-right positions of the buses may change.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-power-buses.jpg" alt="breadboards with power buses reversed" width="500" height="371">
+</div>
+
+
+
+<h3 id="pushing">Not pushing leads and wires in all the way</h3>
+
+<p>Electronic components and jumper wires can all have leads of varying lengths. Sometimes students will only push leads <i>partially</i> into a breadboard hole, instead of pushing them down firmly all the way (until they cannot go any farther). This can result in loose connections that lead to strange circuit behavior, like an LED flickering on and off. Take a look at these two side-by-side images. The image on the left shows leads that have not been pushed into the breadboard all the way. The picture on the right shows leads that are properly pushed into the breadboard as far as they can go. 
+</p>
+
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-leads-pushed-in.jpg" alt="component leads pushed into breadboard" width="800" height="300">
+</div>
+ 
+
+
+<p>Note that some components, like LEDs, have very long leads that do not fit into the breadboard all the way. Other components, like pre-cut jumper wires, typically have leads cut to the right length, so they fit flush up against the breadboard.
+</p>
+
+<h3 id="backwards">Putting components in backwards</h3>
+
+<p>For some electronic components, <i>direction matters</i>. Some components have <b>polarity</b>, meaning they have a positive side and a negative side that must be connected correctly. Other components have multiple pins that all serve different functions. Putting these components into your circuit backwards or facing the wrong way will prevent your circuit from functioning properly. If your circuit is not working and it involves any of these components, check to make sure they are inserted the right way.
+</p>
+
+<p><b>Batteries</b> have a positive terminal and a negative terminal. There are many different types of batteries, but the positive terminal is almost always marked with a "+" symbol. Typically, battery holders will have "+" and "-" symbols printed inside them; make sure the "+" symbols on your batteries line up with the "+" symbols in the battery holder.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/batteries.jpg" alt="9V, AA, and coin cell batteries" width="250" height="255">
+</div>
+ 
+<br>
+
+<p><b>LEDs</b> have a positive side (called the <b>anode</b>) and a negative side (called the <b>cathode</b>). The metal lead for the anode is longer than the lead for the cathode. The cathode side also usually has a flat edge on the plastic part of the LED. 
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/LED-anode-cathode.png" alt="LED polarity anode and cathode" width="250" height="464">
+</div>
+ 
+<br>
+
+<p><b>Diodes</b> are like one-way valves that only let electricity flow in one direction. They are usually small cylinders marked with a band or stripe on one end (this is the direction electricity can flow toward). 
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/diodes.jpg" alt="diodes" width="500" height="180">
+</div>
+ 
+<br>
+
+<p><b>Capacitors</b> are components that can store electrical charge. Common "ceramic disc" capacitors (small orange/tan circles) are not polarized, but several other types of capacitors are, and will typically have arrow or minus signs pointing toward the negative lead.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/capacitors.jpg" alt="capacitors" width="500" height="332">
+</div>
+ 
+<br>
+
+<p><b>Transistors</b> are like electronically controlled switches that can be used to turn things like motors and lights on and off. Transistors generally have three pins. Putting a transistor in a breadboard backwards will reverse the order of the pins and prevent it from working. Transistors come in several different "packages," usually a black plastic body with small writing on one side. 
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/transistors.jpg" alt="transistors" width="300" height="330">
+</div>
+ 
+<br>
+
+<p><b>Integrated circuits</b>, or <b>ICs</b> for short (sometimes also called "chips") are black rectangular pieces with two rows of pins. They typically have a notch or hole at one end that tells you which way is "up," so you do not put the IC in the breadboard upside-down. See the advanced section on <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#integrated-circuits">integrated circuits</a> to learn more.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/integrated-circuits.jpg" alt="integrated circuits" width="350" height="201">
+</div>
+ 
+<br>
+
+<p>Directions on the Science Buddies website will almost always specify which way a component should be facing; for example, "make sure the gray stripe on the diode is facing toward the positive bus" or "make sure the writing on the transistor is facing to the left." However, some advanced electronics projects may assume you know how to connect certain components properly.
+</p>
+<p>For some electronic components, direction does <i>not</i> matter. For example, <b>jumper wires</b> and <b>resistors</b> work the same in both directions. Look closely at these two images. Even though the jumper wire and resistor have been flipped around in the picture on the right (the jumper wire has a black mark on one end so you can tell which end is which, and the resistor has colored bands), the LED still lights up. Electrically, nothing has changed in the circuit.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-components-reversed.jpg" alt="reversing a jumper wire and a resistor in a breadboard" width="650" height="244">
+</div>
+
+
+
+
+<h3 id="short-circuits">Short circuits</h3>
+
+<p><b>Short circuits</b> occur when "accidental" connections are made on a breadboard between two components that are not supposed to be connected. This can happen from putting components into the wrong rows or buses, or from letting exposed metal parts bump into each other. For example, resistors and LEDs have long metal leads; if you are not careful, these leads could bump into each other and cause a short circuit. If your circuit has components with long, exposed leads, always make sure the leads are not touching each other.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/resistor-short-circuit.jpg" alt="resistor lead short circuit" width="450" height="357">
+</div>
+ 
+
+
+<p>Depending on the circuit, sometimes short circuits are harmless. They may just prevent the circuit from functioning properly until they are located and fixed. However, sometimes short circuits can "burn out" components and cause permanent damage. Short circuits between the power and ground buses are especially important to avoid, because they can get hot enough to burn you and even melt the plastic on the breadboard! In this picture, the red and black wires from a 4xAA battery pack have both been inserted into the ground bus, instead of one into the ground bus and one into the power bus. This causes the breadboard and wire insulation to start melting.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-melting.jpg" alt="breadboard short circuit melting" width="400" height="314">
+</div>
+ 
+
+
+<p>If you ever see or smell smoke when building a circuit, you probably have a short circuit. You should immediately disconnect the battery pack.
+</p>
+
+<h2 id="advanced">Advanced</h2>
+
+<h3 id="integrated-circuits">Integrated circuits (ICs) </h3>
+
+<p><b>Integrated circuits</b>, or ICs for short (sometimes just referred to as "chips") are specialized circuits that serve a huge variety of purposes, such as controlling a robot's motors or making LEDs respond to music. Many ICs come in something called a <b>dual in-line package</b>, or DIP, meaning they have two parallel rows of pins. The gap in the middle of a breadboard (between columns E and F) is just the right width for an IC to fit, straddling the gap, with one set of pins in column E, and one set of pins in column F. Projects that use ICs will always tell you to connect them to the breadboard in this manner.
+</p>
+ 
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/breadboard-DIP.jpg" alt="DIP IC on a breadboard" width="400" height="467">
+</div>
+
+
+
+
+<h3 id="circuit-diagrams">Circuit diagrams</h3>
+
+<p><b>Circuit diagrams</b>, or <b>schematics</b>, are a way to represent a circuit using symbols for each component. Circuit diagrams, as opposed to <a href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#breadboard-diagram">breadboard diagrams</a>, are used by professional engineers when designing circuits, and they are much more convenient for more complicated circuits. You may be introduced to basic circuit diagrams in a high school physics class. For example, this circuit diagram shows a basic circuit with a battery, a switch, an LED, and a resistor.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/LED-circuit-diagram.png" alt="LED circuit schematic" width="294" height="249">
+</div>
+ 
+
+
+<p>However, unlike breadboard diagrams, circuit diagrams only show <i>electrical</i> connections between components. They do not necessarily correspond to the <i>physical</i> layout of the components on a breadboard. For example, even though it looks different, this circuit diagram is identical to the previous one.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/LED-circuit-diagram-rearranged.png" alt="LED circuit schematic rearranged" width="487" height="215">
+</div>
+ 
+
+
+<p>If you have a hard time understanding this, try using your figure to trace the "wire" (the black line) through the circuit, starting at the top of the battery. Notice how your finger still goes through each component in the same order, even though they have been physically rearranged. 
+</p>
+<p>It takes some practice to learn how to read and interpret circuit diagrams. Most beginner electronics projects—especially those on the Science Buddies website—will provide breadboard diagrams that you can follow to build a circuit. 
+</p>
+
+<h3 id="pth-smd">Through-hole vs. surface mount parts</h3>
+
+<p>Breadboards are designed to work with <b>through-hole</b> electronic components. These components have long metal leads that are designed to be inserted through holes in a <b>printed circuit board</b> (PCB) that are plated with a thin copper coating, which allows the components' leads to be soldered to the board.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/electronic-component-leads.jpg" alt="electronic circuit component metal leads" width="650" height="499">
+</div>
+ 
+
+
+<p>Breadboards do not work with <b>surface mount</b> components. These components have short, flat pins on their sides that are designed to be soldered to the surface of a printed circuit board, instead of through holes.
+</p>
+
+<div class="content-image page-break-avoid" style="text-align: center;">
+ 
+<img src="./How to Use a Breadboard_files/SMD-chips.jpg" alt="surface mount device chips" width="500" height="453">
+</div>
+ 
+
+
+<p>Many electronic components are available in both through-hole and surface mount packages. For example, the <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fJameco%2fProducts%2fProdDS%2f300003.pdf">LM3914</a> is an integrated circuit that is designed to drive 10 LEDs as a "bar graph" display. If you search <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=http%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fStoreCatalogDrillDownView%3flangId%3d-1%26storeId%3d10001%26catalogId%3d10001%26freeText%3dLM3914%26search_type%3djamecoall">Jameco Electronics</a> for "LM3914", several different results come up. You can tell from looking at the thumbnails that <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=http%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fProduct_10001_10001_300003_-1">this part</a> is through hole and <a href="http://www.avantlink.com/click.php?tt=cl&amp;mi=10609&amp;pw=182414&amp;ctc=how-to-use-a-breadboard&amp;url=https%3a%2f%2fwww.jameco.com%2fwebapp%2fwcs%2fstores%2fservlet%2fProduct_10001_10001_839851_-1">this part</a> is surface mount. While most Science Buddies projects will link to exactly what parts you need to buy for a project, be careful if you are buying parts for your own project. If you are using a breadboard, make sure you buy through-hole parts and not surface mount.
+</p>
+
+
+
+
+
+<!--[-->
+<div id="menu-icons-share">
+   <a class="email email-link" href="http://www.sciencebuddies.org/science-fair-projects/email_this.php?filename=%2Fscience-fair-projects%2Fhow-to-use-a-breadboard.shtml&amp;title=How%20to%20Use%20a%20Breadboard">Email</a>
+   <a class="twitter twitter-link" href="http://twitter.com/intent/tweet?status=How%20to%20Use%20a%20Breadboard:%20http%3A%2F%2Fwww.sciencebuddies.org%2Fscience-fair-projects%2Fhow-to-use-a-breadboard.shtml" target="_blank">Twitter</a>
+   <a class="google google-link" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.sciencebuddies.org%2Fscience-fair-projects%2Fhow-to-use-a-breadboard.shtml&amp;How%20to%20Use%20a%20Breadboard" target="_blank">Google+</a>
+   <a class="facebook facebook-link" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.sciencebuddies.org%2Fscience-fair-projects%2Fhow-to-use-a-breadboard.shtml" target="_blank">Facebook</a>
+   <a class="pinterest pinterest-link" href="http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml#">Pinterest</a>
+   <a class="print print-link" href="javascript:window.print();">Print</a>
+   <a class="report report-link" href="http://www.sciencebuddies.org/science-fair-projects/email-somethingwrong.shtml?from=%2Fscience-fair-projects%2Fhow-to-use-a-breadboard.shtml">Report a Problem</a>
+</div>
+
+<!--]-->
+
+
+
+      
+<!--[-->
+<div id="sponsors">
+      <div class="sponsor left " id="Sponsor.Elmers">
+   <a href="http://www.elmers.com/"><img src="./How to Use a Breadboard_files/Sponsor.Elmers.png" alt="Elmer&#39;s  is a proud sponsor of Science Buddies" width="470" height="190"></a>
+   
+   </div>
+      <div class="sponsor right " id="PSA.ElmersParentsClub">
+   <a href="http://www.elmers.com/parents"><img src="./How to Use a Breadboard_files/PSA_ElmersParentsClub.png" alt="PSA for Elmer&#39;s Parents Club" width="470" height="190"></a>
+   
+   </div>
+   <div class="clear"></div>
+</div>
+
+<!--]-->
+
+   </div>
+   
+<!--[-->
+<div id="footer-print" class="only-print">
+   <br>
+   <hr>
+   <p>You can find this page online at: http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml</p> 
+   <img src="./How to Use a Breadboard_files/QrCode.aspx" width="100" height="100" alt="QR code">
+   <p>You may print and distribute up to 200 copies of this document annually, at no charge, for personal and classroom educational use. When printing this document, you may NOT modify it in any way.  For any other use, please contact Science Buddies.</p>
+   <hr>
+   <br>
+</div>
+<!--]-->
+
+   
+<!--[-->
+<div id="footer">
+   <div id="footer-opaque" class="only-screen"></div>
+
+   <div class="only-screen">
+      <div class="column">
+         <div class="header">COMPANY</div>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/aboutus.shtml">About Us</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/aboutus_sponsors.shtml">Sponsors</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/aboutus_partners.shtml">Partners</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/NSF-research-grants-funding.shtml">Academic Outreach Partnerships</a>
+         <br>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/contactus.shtml">Contact Us</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/jobs.shtml">Work for Us</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/privacy_policy.shtml">Privacy Policy</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/image_credits.php">Image Credits</a>
+      </div>
+
+      <div class="column">
+         <div class="header">RESOURCES</div>
+         <a href="http://www.sciencebuddies.org/account/my-science-buddies">My Science Buddies</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/student_resources.shtml">Student Resources</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/parent_resources.shtml">Parent Resources</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/teacher_resources.shtml">Hands-on STEM for Your Classroom</a>
+         <a href="http://www.sciencebuddies.org/science-engineering-careers">Careers in Science</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/aboutus_newsroom.shtml">Newsroom</a>
+         <a href="http://www.sciencebuddies.org/blog/index.php">Blog</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/SiteMap.shtml">Site Map</a>
+      </div>
+
+      <div class="column">
+         <div class="header">PROJECT HELP</div>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/project_guide_index.shtml">Science Fair Project Guide</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/engineering-design-process-guide.shtml">Engineering Design Project Guide</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/competitions_index.shtml">Advanced Project Guide</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/project_ideas.shtml">Science Fair Project Ideas</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/ask-an-expert-intro">Ask an Expert</a>
+      </div>
+
+      <div class="column">
+         <div class="header">GET INVOLVED</div>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/donating_now.shtml">How to Donate</a>
+         <a href="http://www.sciencebuddies.org/volunteer/participate">How to Volunteer</a>
+         <a href="http://www.sciencebuddies.org/account/registration">Create a FREE Science Buddies Account</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/ScienceBuddiesinAction.shtml">Science Buddies in Action</a>
+         <a href="http://www.sciencebuddies.org/science-fair-projects/summer_science_camp-directory.shtml">Summer Science Camps</a>
+      </div>
+
+      <div class="column last">
+         <div class="header">FIND US HERE</div>
+         <a class="icon-share facebook" href="https://www.facebook.com/ScienceBuddies">Join us on Facebook</a>
+         <a class="icon-share twitter" href="https://twitter.com/ScienceBuddies">Follow us on Twitter</a>
+         <a class="icon-share pinterest" href="https://pinterest.com/sciencebuddies/">Follow us on Pinterest</a>
+         <a class="icon-share email" href="mailto:scibuddy@sciencebuddies.org">Email Us</a>
+      </div>
+   </div>
+
+   <div class="copyright center">
+      
+      Copyright © 2002-2016 Science Buddies. All rights reserved.
+      Reproduction of material from this website without written permission is strictly prohibited.
+      <br>
+      Use of this site constitutes acceptance of our <a href="http://www.sciencebuddies.org/science-fair-projects/terms_conditions.shtml">Terms and Conditions of Fair Use</a>.
+   </div>
+</div>
+<!--]-->
+
+   
+<!--[-->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-f9-_oB9MbKYSU"
+};
+</script>
+<script type="text/javascript" src="./How to Use a Breadboard_files/quant.js"></script>
+<noscript>
+&lt;img src="http://pixel.quantserve.com/pixel/p-f9-_oB9MbKYSU.gif" style="display: none;" height="1" width="1" alt="Quantcast"/&gt;
+</noscript>
+<!--]-->
+
+   
+<!--[-->
+<script async="" src="./How to Use a Breadboard_files/analytics.js"></script>
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-519241-1', {'cookieDomain': 'sciencebuddies.org'});
+ga('require', 'ec');
+ga('send', 'pageview');
+</script>
+<!--]-->
+
+   
+<!--[-->
+
+<noscript>
+&lt;img src="/Handlers/ga.aspx?utmac=UA-519241-2&amp;amp;utmn=1311055435&amp;amp;utmr=https%3a%2f%2fwww.google.com%2f&amp;amp;utmdt=How+to+Use+a+Breadboard&amp;amp;utmp=%2fscience-fair-projects%2fhow-to-use-a-breadboard.shtml" width="1" height="1" alt="ga" /&gt;
+</noscript>
+<!--]-->
+
+ </div>
+
+
+
+
+
+
+
+<script src="./How to Use a Breadboard_files/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="./How to Use a Breadboard_files/sb.magnific-popup.js" type="text/javascript"></script>
+
+
+<!--[-->
+
+<!--]-->
+   
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebPage",
+   "description": "An introduction on how to use a solderless breadboard for circuits and electronics projects.",
+   "keywords": "breadboard, solder, solderless, tutorial, beginner, introduction, how to, use, using, circuits, electronics, projects, LED, resistor, jumper wire, battery, row, column, hole, bus, rail, strip, power, ground, voltage, current",
+   "image": "http://www.cdn.sciencebuddies.org/Files/7300/7/basic-LED-circuit.jpg",
+   "isFamilyFriendly": "true",
+   "name": "How to Use a Breadboard",
+   "url": "http://www.sciencebuddies.org/science-fair-projects/how-to-use-a-breadboard.shtml"
+}
+</script>
+
+
+<script id="PIN_1478160583389.f.callback[0]" type="text/javascript" charset="utf-8" src="./How to Use a Breadboard_files/saved_resource"></script></body></html>

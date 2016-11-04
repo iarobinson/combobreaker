@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Stepper Motor and Controller Primer - Phidgets Support</title>
+
+<meta name="generator" content="MediaWiki 1.19.0">
+<link rel="shortcut icon" href="http://www.phidgets.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.phidgets.com/wiki/opensearch_desc.php" title="Phidgets Support (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://www.phidgets.com/wiki/api.php?action=rsd">
+<link rel="copyright" href="http://www.phidgets.com/docs/MediaWiki:Copyright">
+<link rel="alternate" type="application/atom+xml" title="Phidgets Support Atom feed" href="http://www.phidgets.com/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="./stepperDriver_files/load.php">
+<style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: wiki:resourceloader:filter:minify-css:7:8b08bdc91c52a9ffba396dccfb5b473c */
+
+
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: wiki:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./stepperDriver_files/load(1).php">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}.editsection{display:none}
+
+/* cache key: wiki:resourceloader:filter:minify-css:7:40436297bd93906a010108e46094c495 */
+</style>
+
+<script src="./stepperDriver_files/load(2).php"></script><script src="./stepperDriver_files/load(3).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Stepper_Motor_and_Controller_Primer","wgTitle":"Stepper Motor and Controller Primer","wgCurRevisionId":23690,"wgArticleId":1901,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Primer"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Stepper_Motor_and_Controller_Primer","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":false,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"phidget","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,
+"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: wiki:resourceloader:filter:minify-js:7:3d6860b31ba39515c74e3e6bb87a22aa */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script type="text/javascript" src="./stepperDriver_files/load(4).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/phidget/csshover.min.htc")}</style><![endif]--><link href="./stepperDriver_files/menu.css" rel="stylesheet" type="text/css"><link type="text/css" rel="stylesheet" href="./stepperDriver_files/index.php"><script src="./stepperDriver_files/index(1).php" type="text/javascript"></script><script src="./stepperDriver_files/index(2).php" type="text/javascript"></script><script src="./stepperDriver_files/index(3).php" type="text/javascript"></script><script src="./stepperDriver_files/index(4).php" type="text/javascript"></script><script src="./stepperDriver_files/index(5).php" type="text/javascript"></script><script src="./stepperDriver_files/index(6).php" type="text/javascript"></script><script src="./stepperDriver_files/index(7).php" type="text/javascript"></script><script src="./stepperDriver_files/index(8).php" type="text/javascript"></script><script src="./stepperDriver_files/index(9).php" type="text/javascript"></script><script src="./stepperDriver_files/index(10).php" type="text/javascript"></script><script src="./stepperDriver_files/index(11).php" type="text/javascript"></script><script src="./stepperDriver_files/index(12).php" type="text/javascript"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Stepper_Motor_and_Controller_Primer skin-phidget action-view">
+
+		<!-- phidget menu -->
+		<div class="ph-header">
+			<div class="ph-header-container">
+				<div class="ph-header-image"><a href="http://www.phidgets.com/"><img src="./stepperDriver_files/logo.jpg"></a></div>
+				<div class="ph-header-inner-container">
+					<div class="ph-header-text"><div>Products for USB Sensing and Control</div></div>
+						<div class="ph-menu-container">
+						<ul class="ph-menu">
+							<li class="ph-menu-home"><a href="http://www.phidgets.com/index.php">Home</a></li>
+							<li class="ph-menu-support"><a href="http://www.phidgets.com/docs/">Support</a></li>
+							<li class="ph-menu-forums"><a href="http://www.phidgets.com/phorum/">Forums</a></li>
+							<li class="ph-menu-drivers"><a href="http://www.phidgets.com/docs/Operating_System_Support">Drivers</a></li>
+							<li class="ph-menu-programming"><a href="http://www.phidgets.com/docs/Programming_Resources">Programming</a></li>
+							<li class="ph-menu-contact"><a href="http://www.phidgets.com/docs/Contact_Us">Contact Us</a></li>
+							<li class="ph-menu-dealers"><a href="http://www.phidgets.com/docs/Dealers">Dealers</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /phidget menu -->
+
+
+      <style type="text/css">
+        #ca-viewsource { display: none !important; }
+        #ca-watch { display: none !important; }
+        #ca-talk { display: none !important; }
+        #ca-history { display: none !important; }
+        #ca-view { display: none !important; }
+        #ca-nstab-main { display: none !important; }
+      </style> 
+    		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;" class="js-messagebox"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">
+				<span dir="auto">Stepper Motor and Controller Primer</span>
+			</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Phidgets Support</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to: <a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#mw-head">navigation</a>,
+					<a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br>
+</p>
+<table>
+
+<tbody><tr valign="middle">
+<td style="text-align: center; width: 300px;"> <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Types_of_Stepper_Motors"><span class="tocnumber">2</span> <span class="toctext">Types of Stepper Motors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Coils"><span class="tocnumber">2.1</span> <span class="toctext">Coils</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Bipolar"><span class="tocnumber">2.1.1</span> <span class="toctext">Bipolar</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Unipolar"><span class="tocnumber">2.1.2</span> <span class="toctext">Unipolar</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Magnets"><span class="tocnumber">2.2</span> <span class="toctext">Magnets</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Permanent_Magnet"><span class="tocnumber">2.2.1</span> <span class="toctext">Permanent Magnet</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Variable_Reluctance"><span class="tocnumber">2.2.2</span> <span class="toctext">Variable Reluctance</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Hybrid"><span class="tocnumber">2.2.3</span> <span class="toctext">Hybrid</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Drive"><span class="tocnumber">2.3</span> <span class="toctext">Drive</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Chopper_Drive"><span class="tocnumber">2.3.1</span> <span class="toctext">Chopper Drive</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Resistive_Limited"><span class="tocnumber">2.3.2</span> <span class="toctext">Resistive Limited</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#How_it_Works"><span class="tocnumber">3</span> <span class="toctext">How it Works</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Hybrid_Bipolar_Steppers"><span class="tocnumber">3.1</span> <span class="toctext">Hybrid Bipolar Steppers</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Hybrid_Unipolar_Steppers"><span class="tocnumber">3.2</span> <span class="toctext">Hybrid Unipolar Steppers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Controlling_the_Stepper_Motor"><span class="tocnumber">4</span> <span class="toctext">Controlling the Stepper Motor</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Setting_the_Current_Limit"><span class="tocnumber">4.1</span> <span class="toctext">Setting the Current Limit</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Choosing_a_Supply_Voltage"><span class="tocnumber">4.2</span> <span class="toctext">Choosing a Supply Voltage</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Setting_the_Velocity_Limit"><span class="tocnumber">4.3</span> <span class="toctext">Setting the Velocity Limit</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Setting_the_Acceleration"><span class="tocnumber">4.4</span> <span class="toctext">Setting the Acceleration</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Continuous_Rotation_and_Forward.2FReverse"><span class="tocnumber">4.5</span> <span class="toctext">Continuous Rotation and Forward/Reverse</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Cooling"><span class="tocnumber">4.6</span> <span class="toctext">Cooling</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Wire_Length"><span class="tocnumber">4.7</span> <span class="toctext">Wire Length</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Saving_Power"><span class="tocnumber">4.8</span> <span class="toctext">Saving Power</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Braking"><span class="tocnumber">4.9</span> <span class="toctext">Braking</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Stepping_Modes"><span class="tocnumber">5</span> <span class="toctext">Stepping Modes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Full_Stepping"><span class="tocnumber">5.1</span> <span class="toctext">Full Stepping</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Half_Stepping"><span class="tocnumber">5.2</span> <span class="toctext">Half Stepping</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Mini.2FMicro-stepping"><span class="tocnumber">5.3</span> <span class="toctext">Mini/Micro-stepping</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Selecting_a_Gearbox"><span class="tocnumber">6</span> <span class="toctext">Selecting a Gearbox</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Planetary_Gearbox_Reduction_Ratios"><span class="tocnumber">6.1</span> <span class="toctext">Planetary Gearbox Reduction Ratios</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Gearbox_Terminology"><span class="tocnumber">6.2</span> <span class="toctext">Gearbox Terminology</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Product_Comparison_Tables"><span class="tocnumber">7</span> <span class="toctext">Product Comparison Tables</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Glossary_of_Terms"><span class="tocnumber">8</span> <span class="toctext">Glossary of Terms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-35"><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#Motor_Terms"><span class="tocnumber">8.1</span> <span class="toctext">Motor Terms</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+</td>
+<td> <img alt="3302.jpg" src="./stepperDriver_files/3302.jpg" width="400" height="269">
+</td>
+<td> <img alt="1063.jpg" src="./stepperDriver_files/1063.jpg" width="400" height="335">
+</td></tr></tbody></table>
+<p><br style="clear: both;">
+</p>
+<h2> <span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>Stepper motors are broadly available motors commonly used for positioning.  The rotor of a stepper moves in a series of discrete steps.  By energizing the coils of the motor in sequence through many of these steps, the direction of rotation, number of rotations, and exact position of the motor shaft can be easily controlled.  By controlling the time between the steps, the speed and acceleration of the stepper is regulated.  In contrast, a DC motor will blindly spin at the highest speed possible when powered, unless it is controlled with an <a href="http://www.phidgets.com/docs/Encoder_Primer" title="Encoder Primer">Encoder</a> and a control system program. It is not necessary to use an encoder on a stepper motor unless you're concerned about the motor losing count of the steps over a long period of time or in high torque situations.
+</p><p>Each stepper motor is designed to move by a certain angle with each discrete step.  The simplest stepper motors will rotate 90 degrees per step.  Standard industrial steppers will rotate 1.8 degrees per step. The stepping angle can be further reduced through use of a gearbox.
+</p><p>In addition to the ease of precisely controlling position and speed, Steppers have other advantages:
+</p>
+<ul><li>Most motors have very little torque when they are operating at low speed or standstill. Since a stepper’s rotor is held in place by a magnetic field during each step,  steppers have full torque at low speed or standstill, making them very useful for low speed rotation and actuation. Additionally, a stepper motor can remain in a fixed position for long periods of time with the rated current in the windings, whereas with DC motors, stalling and remaining in a fixed position for long periods of time will cause motor burnout. 
+</li><li>DC Motors have brushes with a finite lifetime.  Steppers have no brushes, and are limited only by the life of the bearings.
+</li></ul>
+<p>Compared to DC Motors, there are disadvantages to Steppers:
+</p>
+<ul><li>Each step will produce vibration in the motor.  If these vibrations are at the mechanical resonant frequency of the motor, they can cause the rotor to overshoot and bounce back and forth, resulting in a severe loss of torque. This phenomenon is called “ringing” and is often accompanied by a loud buzzing or grinding noise. To prevent the motor from operating in such a way, you should test the motor at various speeds in the physical application it is intended for, and try to avoid running the motor at a speed which exhibits ringing behaviour. 
+</li><li>If the motor encounters a brief overload, the fixed coils on the stator and  the free-spinning rotor can lose track of each other. If this happens at higher speeds, the motor will often stall.  Even at lower speeds, your system will have lost track of where exactly the motor is positioned – unless there is an independent system (e.g., an optical encoder) tracking the position.
+</li><li>A Stepper motor cannot be loaded at its maximum torque, as it will almost certainly be overloaded during operation.  A DC Motor will naturally adjust its speed depending on how much power is provided, and the torque required to turn it’s shaft.
+</li></ul>
+<p>For more information about the differences between stepper motors, DC motors, and servo motors, see the <a href="http://www.phidgets.com/docs/Motor_Selection_Guide" title="Motor Selection Guide">Motor Selection Guide</a>.
+</p>
+<h2> <span class="mw-headline" id="Types_of_Stepper_Motors">Types of Stepper Motors</span></h2>
+<p>We find it useful to classify motors according to how the coils are wound (Bipolar / Unipolar), the internal magnetic construction (Permanent Magnet / Hybrid), and how the current in the coils is regulated (Chopper Drive / Resistive Limited).
+</p>
+<h3> <span class="mw-headline" id="Coils">Coils</span></h3>
+<h5> <span class="mw-headline" id="Bipolar">Bipolar</span></h5>
+<p>These motors are manufactured with two coils of wire, resulting in one winding per phase.  By alternating the power between coils, as well as the direction of the current, the motor is rotated. This configuration produces magnetic fields within the coils in either direction, hence the term “Bipolar.”  The controller is more expensive because it has to be able to produce both positive and negative electrical currents, but the advantage is that the entire coil is being used, thus increasing torque capabilities at all speeds. We do not recommend using a bipolar controller to run a unipolar motor, even though it is theoretically possible.
+</p>
+<h5> <span class="mw-headline" id="Unipolar">Unipolar</span></h5>
+<p>In a unipolar motor, the motor windings consist of two identical coils per phase, wound in opposite directions (each occupying half of the space a coil normally would in a bipolar stepper).   As a result, the controller only needs to select which of the two coils to pass current through in order to change the magnetic polarity, and only a positive current is required to be generated.  Due to this simplified control mechanism which uses only half of each coil, the torque of unipolar motors are usually much lower, but the overall cost of the system is much cheaper. The simplicity of the unipolar controller also means that you cannot use it to run a bipolar stepper motor.
+</p>
+<h3> <span class="mw-headline" id="Magnets">Magnets</span></h3>
+<h5> <span class="mw-headline" id="Permanent_Magnet">Permanent Magnet</span></h5>
+<p>Permanent magnet motors are small, low torque, and inexpensive. They use a permanent magnet in the rotor that is attracted or repelled by magnetic field generated by the stator coils. Step angles are often 7.5 or 15 degrees, and the motors are usually unipolar.
+</p>
+<h5> <span class="mw-headline" id="Variable_Reluctance">Variable Reluctance</span></h5>
+<p>The rotor of a variable reluctance stepper is made of iron, and it therefore aligns with the magnetic field generated by the stator coils. Since it doesn’t use a permanent magnet, it doesn’t matter which direction the current flows as long as each coil is wound in the opposite direction as the coil across from it. Therefore, variable reluctance steppers are unipolar and are typically designed to have larger step angles of 15 or more degrees.
+</p>
+<h5> <span class="mw-headline" id="Hybrid">Hybrid</span></h5>
+<p>Hybrid Motors dominate the stepper motor world – they use a combination of characteristics from permanent magnet and variable reluctance steppers and have the best torque and speed, but are more expensive to produce. Step angles are typically 0.9 to 3.75 degrees, giving much better step resolution.
+</p>
+<h3> <span class="mw-headline" id="Drive">Drive</span></h3>
+<h5> <span class="mw-headline" id="Chopper_Drive">Chopper Drive</span></h5>
+<p>Chopper Drive is an electronic control technique which allows specific motors to produce more power, torque, speed, and be more efficient.  Instead of relying on the resistance of the coil wiring, the inductance of the wiring is exploited by sophisticated control electronics as a short-term limitation of motor current.  Motor Manufacturers don’t do a good job of distinguishing motors suitable for use with Chopper Drive electronics.  The motors will often be large, square, with very low resistance.
+</p>
+<h5> <span class="mw-headline" id="Resistive_Limited">Resistive Limited</span></h5>
+<p>Small, inexpensive steppers are designed to be built and controlled as cheaply as possible.  To simplify the control electronics, the length and thickness of the wire in the coils is selected for a particular control voltage.  This allows the coil itself to regulate the power available to the motor – provided the appropriate voltage is used, of course.  We call this type of motor Resistive Limited.
+</p>
+<h2> <span class="mw-headline" id="How_it_Works">How it Works</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:232px;"><img alt="" src="./stepperDriver_files/230px-Stepper_back_web.jpg" width="230" height="230" class="thumbimage">  <div class="thumbcaption"><div class="magnify"><a href="http://www.phidgets.com/docs/File:Stepper_back_web.jpg" class="internal" title="Enlarge"><img src="./stepperDriver_files/magnify-clip.png" width="15" height="11" alt=""></a></div>Cross-Section of a Hybrid Bipolar Stepper<br><a href="http://www.phidgets.com/wiki/images/c/c8/Stepper_back_web.jpg" class="internal" title="Stepper back web.jpg">Full-size Image</a></div></div></div>
+<h3> <span class="mw-headline" id="Hybrid_Bipolar_Steppers">Hybrid Bipolar Steppers</span></h3>
+<p>This section of the primer will cover the general principle of operation for stepper motors. While this information is by no means necessary to use a stepper motor, those who are curious about their inner workings may read on. 
+</p><p>The thumbnail to the left is a cross-sectional view of the inside of a hybrid bipolar stepper motor. As you can see, it has eight poles with six teeth each. This motor contains two coils- one wrapping the odd-numbered poles, and the other wrapping the even-numbered poles. The steel end-cap in the center of the image covers a cylindrical permanent magnet which surrounds the shaft. 
+</p><p>If positive current is sent to the odd-numbered coil, poles 1 and 5 are magnetized as south, and poles 3 and 7 are magnetized as north. Assuming the permanent magnet in the center of the motor has its north pole facing toward us, this will result in the rotor turning so that the teeth line up with stator poles 1 and 5, as they are in the image. At the same time, poles 3 and 7 will become aligned on the opposite end of the motor, where the gear on the rotor is permanently offset by the width of one tooth and the permanent magnet has magnetized the rotor as south. The rotation of the motor is continued by sending negative current through the even-numbered phase, then negative current through the odd-numbered phase, then positive current through the even-numbered phase, and so on. The stepper controller can reverse the direction of rotation simply by reversing this sequence.
+</p><p>When a stepper motor becomes engaged in software, and current is applied to the coils, it may abruptly "snap" to the position that the rotor is being held at. 
+</p><p><br style="clear: both;">
+</p>
+<h3> <span class="mw-headline" id="Hybrid_Unipolar_Steppers">Hybrid Unipolar Steppers</span></h3>
+<p>The operation of a hybrid unipolar stepper is very similar to the bipolar stepper described above, except that each pole has two seperate coils wound in opposite directions. This results in four phases which only require positive current to operate. Rather than alternating the direction of current, the motor controller simply sends positive current to the appropriate half of the coil.
+</p>
+<h2> <span class="mw-headline" id="Controlling_the_Stepper_Motor">Controlling the Stepper Motor</span></h2>
+<p>The following information has been derived from using the 3308 stepper motor connected to a 1063 - PhidgetStepper Bipolar 1-Motor controller.
+</p>
+<h3> <span class="mw-headline" id="Setting_the_Current_Limit">Setting the Current Limit</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><img alt="" src="./stepperDriver_files/400px-Graph12v.jpg" width="400" height="185" class="thumbimage">  <div class="thumbcaption"><div class="magnify"><a href="http://www.phidgets.com/docs/File:Graph12v.jpg" class="internal" title="Enlarge"><img src="./stepperDriver_files/magnify-clip.png" width="15" height="11" alt=""></a></div>The current/speed characteristics for the 3308 at 12V.<br><a href="http://www.phidgets.com/wiki/images/0/04/Graph12v.jpg" class="internal" title="Graph12v.jpg">Full-size Image</a></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><img alt="" src="./stepperDriver_files/400px-Graph24v.jpg" width="400" height="186" class="thumbimage">  <div class="thumbcaption"><div class="magnify"><a href="http://www.phidgets.com/docs/File:Graph24v.jpg" class="internal" title="Enlarge"><img src="./stepperDriver_files/magnify-clip.png" width="15" height="11" alt=""></a></div>The current/speed characteristics for the 3308 at 24V.<br><a href="http://www.phidgets.com/wiki/images/1/19/Graph24v.jpg" class="internal" title="Graph24v.jpg">Full-size Image</a></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><img alt="" src="./stepperDriver_files/400px-Graph30v.jpg" width="400" height="181" class="thumbimage">  <div class="thumbcaption"><div class="magnify"><a href="http://www.phidgets.com/docs/File:Graph30v.jpg" class="internal" title="Enlarge"><img src="./stepperDriver_files/magnify-clip.png" width="15" height="11" alt=""></a></div>The current/speed characteristics for the 3308 at 30V.<br><a href="http://www.phidgets.com/wiki/images/8/8b/Graph30v.jpg" class="internal" title="Graph30v.jpg">Full-size Image</a></div></div></div>
+<p>The current limit is an important control property of stepper controllers. Since many stepper motors have a very low coil resistance, the current through the coils cannot “self-regulate” to a safe level on their own.  They require the sophisticated control techniques of a Chopper Drive, which is used in the <a rel="nofollow" class="external text" href="http://www.phidgets.com/products.php?product_id=1063">1063 PhidgetStepper</a> controller.  As a result, the maximum current allowed should be explicitly set.
+</p><p>There are many factors that influence what the current limit should be set to. These include, but are not limited to,the acceleration and speed of the stepper, the supply voltage, applied torque, motor inductance, and coil resistance. The process of choosing the current limit can be simplified by following some general rules of thumb. The graphs in this section show a set of speed vs. current characteristics for the 3308 stepper with various power supplies. 
+</p><p>In the these graphs, the <b>“actual speed”</b> of the motor is the maximum speed attainable in a real world test done with no load on the motor, but at very high acceleration.  The <b>“max speed”</b> shows the limitation on speed imposed by the inductance of the motor coils at a given supply voltage.  Given that the 1063 controller is only able to run at a maximum speed of 2048 full steps per second, our graphs don’t show data at higher speeds. 
+</p><p>When the current limit is set low and the acceleration is high, the motor will not be able to provide enough power to accelerate itself and the load it’s driving.  The motor also has to overcome friction losses within the system, and do work on the load - for example, lifting a weight.  By increasing the current limit, more current and power is made available to accelerate and maintain maximum speeds.  This can be seen on any of the graphs in the initial steep ramp of the actual speed.  As the current limit increases, the motor is able to achieve higher speeds.
+</p><p>In the case of this particular motor, the large inductance of the coils - great for producing lots of torque, quickly overwhelms a 12V power supply.  To get higher speeds and more performance out of this motor, higher supply voltages are necessary.  Compare the actual speed curve on the 12V graph to the 30V graph.  At 30V, the motor is able to achieve a much higher speed.  It’s important to remember that the actual speed was measured at very high accelerations - by lowering acceleration, higher velocities can be achieved.  Of course, if your motor is doing a lot of work, you’ll need to supply enough current to produce the necessary torque, therefore limiting the maximum speed. 
+</p><p>Setting Current Limit for your application is a balancing act.  By increasing the current limit, more torque is available, but far more power will be consumed when the motor is turning very slowly or stopped. When setting a high acceleration, more power (therefore current) is required to accelerate the motor and it’s load. Selecting the current limit is often done dynamically in the actual application - set the current limit very low, and run the system, increasing the Current Limit if it stalls.  After a set up has been determined that is reliable, increase the current limit by another 25% to give some margin.
+</p><p>There is no point in setting the current limit to be greater than the motor’s rated current- the increased inductance will only further limit the motor speed. In this case, the 30V graph shows that it’s not feasible to operate this motor at maximum torque (1.7 Amps) at a speed greater than 1100 full steps per second. By reducing the current limit, greater speeds are possible, but less torque will be available.  Most motors designed for Chopper Drive control can operate at much higher voltages, but Phidgets Inc. does not carry a controller that can provide these voltages at this time.
+</p><p>Note that just because you have set the current limit to some amount (for the sake of example let's say 2A) the motor will not draw 2A at all times.  The motor will only draw as much current as it needs.  This means that if there is only a small load on the motor and it is spinning at less than its top speed the motor might only draw a small fraction of the allotted 2A.  Even as low as 300 or 400mA.  As more load or higher speed is applied, the current usage will go up until the controller is giving the motor the full current limit. As a motor draws more current, it will also produce more heat. It is normal for a stepper motor to be hot to the touch after running for a while. If the motor is getting very hot, you may be trying to drive too large a load for that particular motor.
+</p>
+<h3> <span class="mw-headline" id="Choosing_a_Supply_Voltage">Choosing a Supply Voltage</span></h3>
+<p>When looking at a stepper motor's specifications, you may come across a "Rated Voltage" value. This value is usually equal to the rated current multiplied by the resistance of the coils of the motor, making it somewhat of a redundant specification. As mentioned earlier, you can increase your controller's supply voltage in order to allow the motor to reach higher speeds at a lower current (because high current causes high inductance which puts a hard limit on how much speed and torque a motor can produce). The motor will also produce more heat as you increase the supply voltage, so it's a good idea to choose a supply voltage based on the performance you need for the motor. Some motors will have a "Recommended Voltage" for a particular controller, which is the amount of voltage needed to reach the optimal speed and torque of the motor with minimal heating.
+</p>
+<h3> <span class="mw-headline" id="Setting_the_Velocity_Limit">Setting the Velocity Limit</span></h3>
+<p>The velocity of a motor cannot be directly chosen with our stepper controllers. However, a velocity limit can be chosen to ensure that the motor does not go faster than a certain speed. This is useful because every stepper motor has a speed that causes itself to vibrate at the resonant frequency of its own moving parts. When the motor vibrates at this frequency, the motor will often overshoot its target position, causing it to lose most of its torque, sometimes even rotating in the wrong direction. This phenomenon is sometimes called "ringing". If you experience these problems while running your stepper motor at a constant velocity, try setting the velocity limit to lower or higher than it was previously, in an attempt to minimize the amount of time spent operating at this particular velocity.
+</p>
+<h3> <span class="mw-headline" id="Setting_the_Acceleration">Setting the Acceleration</span></h3>
+<p>The acceleration of a stepper motor is an important consideration when driving a load.  Setting the acceleration too high can result in the motor stalling, especially with a heavy load. Try to use low acceleration in high-torque applications.
+</p>
+<h3> <span class="mw-headline" id="Continuous_Rotation_and_Forward.2FReverse">Continuous Rotation and Forward/Reverse</span></h3>
+<p>A stepper motor can be caused to rotate continuously by simply setting the controller's target position property to an extremely large number of steps.
+</p><p>Stepper motors can easily be run in forward or reverse by choosing a target position greater than or less than the current position, respectively. Reversing the polarity of either of the motor's wire pairs will invert this effect- causing a lesser target position to result in forward rotation, and a greater target position to result in reverse rotation. For this reason, you should pay attention to the way you wire a motor when developing and testing code, and ensure that you wire it with the same polarity in the future to avoid erroneous behaviour in applications where rotation direction matters.
+</p>
+<h3> <span class="mw-headline" id="Cooling">Cooling</span></h3>
+<p>The stepper controllers sold at Phidgets Inc. have a current rating that is limited by the heat dissipation capability of the board. You could add heatsinks, fans, or other cooling devices to increase the current limit, but do so with caution. Unless you have a way of monitoring the temperature of the driver chip during operation, you have no way of knowing how far beyond the rated specification you can go.
+</p>
+<h3> <span class="mw-headline" id="Wire_Length">Wire Length</span></h3>
+<p>Since the stepper controller is sending a fairly simple signal to the motor, interference is not a big concern. You should be able to have quite long wires between your motor and controller. For more information, see the <a href="http://www.phidgets.com/docs/Effects_of_Long_Wires" title="Effects of Long Wires">effects of long wires</a> page.
+</p>
+<h3> <span class="mw-headline" id="Saving_Power">Saving Power</span></h3>
+<p>When the stepper motor has rotated the requested number of steps, and is stopped, the coils will remain energized to hold it in position.  This is necessary to allow the motor to support a load on its shaft without rotating to an unknown position.
+</p><p><b>Holding torque</b> is the amount of torque required to rotate the motor ‘against it’s will’ when the full rated current is flowing through  the coils.  If power consumption or overheating is a problem, and full holding torque is not required, the Current Limit can be decreased in software when the motor is not moving.  Holding torque will decrease linearly as you decrease the Current Limit, but will also allow you to save power and reduce the heat generated in your system.
+</p><p>There is also a small resistance to movement within the motor even when there is no current, called <b>Detent Torque</b>. This may be sufficient to prevent rotation in your application, especially if the stepper has a gearbox on it.
+</p><p>If the motor is not supporting a load or is not required to maintain a specific angle, it is recommended to set the Enable property to false.  This will allow the motor shaft to rotate freely, but the present angle may be lost if forces on the motor-shaft are greater than can be resisted by the detent torque of the unpowered motor. 
+</p><p><br style="clear: both;">
+</p>
+<h3> <span class="mw-headline" id="Braking">Braking</span></h3>
+<p>There are several ways to stop a stepper motor, each with different characteristics: 
+</p><p><b>Set Target Position</b> - If you set the target position to the motor's current position, it will stop. This is typically the best way to stop quickly and hold position, since the motor coils will still be engaged. You could also set the motor velocity limit to zero for a similar effect.
+</p><p><b>Short the coils</b> - If you have the stepper wires connected to some external circuitry, you could use a switch to short the A and B terminals together, and the C and D terminals together. Due to the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Lorentz_force">Lorentz force</a> of the electrons in the coil, the motor will begin to brake and hold position.
+</p><p><b>Cut power</b> - You could cut power to the controller, but since the motor coils would no longer be engaged, the momentum would cause it to continue rotating until it slows down from friction and detent.
+</p>
+<h2> <span class="mw-headline" id="Stepping_Modes">Stepping Modes</span></h2>
+<h3> <span class="mw-headline" id="Full_Stepping">Full Stepping</span></h3>
+<p>This is the default mode of stepping for bipolar motors, where both phases of the motor are controlled by two square waves of current. One wave lags behind the other by 90 degrees, and the motion of the motor is locked to these waves. A full step is completed when the square waves advance by 90 degrees. Since both phases are always fully energized, full stepping provides the best torque. 
+</p>
+<h3> <span class="mw-headline" id="Half_Stepping">Half Stepping</span></h3>
+<p>In this stepping mode, the controller alternates between having one phase energized and both phases energized. This results in the rotor pausing at half-steps in between the poles, effectively halving the step angle. However, since the current to each coil cannot be exactly balanced, the angle that the rotor comes to rest at between poles may not be exactly half the step angle. The downside to half stepping is that the motor will have less torque on the steps when only one phase is energized. 
+</p>
+<h3> <span class="mw-headline" id="Mini.2FMicro-stepping">Mini/Micro-stepping</span></h3>
+<p>By controlling the the relative current of both phases, the rotor position can come to rest at various equally spaced sub-steps between the two phases. This is achieved by following the same procedure for Full Stepping, except that the current supplied more closely resembles a sine wave rather than a square wave. Some bipolar controllers are designed to micro-step at low speeds to allow for smooth rotation.
+</p>
+<h2> <span class="mw-headline" id="Selecting_a_Gearbox">Selecting a Gearbox</span></h2>
+<p>Using a stepper motor with a gearbox can be a good solution in applications that need very low rotation speeds and/or lots of torque.  Selecting a gearbox to attach to the stepper will result in increasing the output torque and decreasing the speed.  
+Simply, the Gearbox Output Speed is:
+</p><p><br>
+<img class="tex" alt="
+ \text{Output Speed} =\frac{\text{Motor Speed}}{\text{Gearbox Ratio}}
+" src="./stepperDriver_files/9b141357ed6f207dd7d0bd35c117fc1f.png">
+</p><p><br>
+Although the reduction ratio plays a large part in determining the Gearbox Output Torque, there is also an inefficiency that is introduced through the use of a gearbox.  Some of the torque of the motor is internally converted into heat and lost. So to calculate the Gearbox Output Torque:
+</p><p><br>
+<img class="tex" alt="
+ \text{Output Torque} = \text{Motor Output Torque  } \times \text{  Gearbox Ratio  } \times \text{  Gearbox Efficiency}
+" src="./stepperDriver_files/2ed982269191065ca0ae064749fa08e8.png">
+</p><p><br>
+When choosing a stepper motor with a gearbox, keep in mind that the gearbox is rated to sustain a specific amount of torque, beyond which the gearbox could become damaged. This limit is often much lower than the amount of torque specified by the above equation.
+</p><p>The Gearbox Step Angle can be determined by:                  
+</p><p><br>
+<img class="tex" alt="
+ \text{Gearbox Step Angle} = \frac{\text{Motor Step Angle}}{\text{Gearbox Ratio}}
+" src="./stepperDriver_files/80f03df8231cdebe4439a18ddd126260.png">
+</p>
+<h3> <span class="mw-headline" id="Planetary_Gearbox_Reduction_Ratios">Planetary Gearbox Reduction Ratios</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><img alt="" src="./stepperDriver_files/300px-Planetary_gearing.jpg" width="300" height="268" class="thumbimage">  <div class="thumbcaption"><div class="magnify"><a href="http://www.phidgets.com/docs/File:Planetary_gearing.jpg" class="internal" title="Enlarge"><img src="./stepperDriver_files/magnify-clip.png" width="15" height="11" alt=""></a></div>This diagram illustrates the parts of a 5.18:1 planetary gearbox.<br><a rel="nofollow" class="external text" href="http://newsite.int.phidgets.com/wiki/images/1/1a/Planetary_gearing.jpg">Click for Larger Image</a></div></div></div>
+<p>In some applications, it is important to know the exact gear ratio of a gearbox (for example, when you need the output shaft to make a several complete rotations 
+and stop in the same position it started). Most motor datasheets will only list an approximate ratio, like "10:1" or "27:1". However, there are ways to figure out 
+the exact ratio. 
+</p><p>In a planetary gearbox where the sun gear is used as an input and the rotation of the spider linking the planet gears is the output, the reduction ratio can be 
+expressed by the following equation:
+</p><p><img class="tex" alt="
+\text{Gearbox Ratio} = \frac{T_R + T_S}{T_S}
+" src="./stepperDriver_files/d5a3ead70fcc9bb7d96ecee5235c9508.png">
+</p><p>Where <span class="texhtml" dir="ltr"><i>T</i><sub><i>R</i></sub></span> is the number of teeth on the ring gear, and <span class="texhtml" dir="ltr"><i>T</i><sub><i>S</i></sub></span> is the number of teeth on the sun gear. In this situation, the number of teeth on the planetary gears 
+don't affect the reduction ratio and serve only to connect the ring and sun gears. In order to increase the reduction ratio, you need to increase the number of 
+teeth on the ring gear. Since there is limited space inside a motor's gearbox, it eventually becomes impossible to increase the gear ratio. This limitation can be 
+bypassed by introducing multiple gear <b>stages</b>. In a multi-stage planetary gearbox, the axles of the planet gears of the first stage are connected to a piece 
+of metal called a "spider", whose rotation is used to turn the sun of the next stage. It's very common for multi-stage planetary gearboxes to have a tall ring 
+gear that spans multiple stages. To determine the overall reduction ratio of a multi-stage planetary gearbox, simply multiply the two ratios together. For 
+example, two stages each with a 5:1 reduction ratio would result in a total ratio of 25:1. 
+The following table lists exact ratios for gearboxes commonly sold at Phidgets Inc.&nbsp;:
+</p><p><br>
+<img alt="Gearbox table.jpg" src="./stepperDriver_files/Gearbox_table.jpg" width="763" height="583">
+</p><p><br>
+The colored squares visualize the stages that compose each gearbox. For example, a two-stage gearbox with 1 blue and 1 green square indicates that one stage is 
+the same ratio as the 1-stage gearbox with the green square beside it, and the other stage is the same as the one with a blue square beside it.
+If you have a third party gearbox and are unable to open it to count the gear teeth, you could also determine the approximate reduction ratio experimentally by 
+measuring the rotation angle after a known number of steps have occured. The more accurately you can measure the angle, the better your approximation will be.
+</p>
+<h3> <span class="mw-headline" id="Gearbox_Terminology">Gearbox Terminology</span></h3>
+<p>Here is a short list of terms you might come across when deciding upon a gearbox:
+</p><p><b>Backlash</b>
+</p><p>The amount of clearance between mated gear teeth.  Theoretically, the backlash should be “the smaller the better,” but in actual practice, some backlash must be allowed to prevent jamming.  
+</p><p><b>Gear Ratio</b>
+</p><p>The gearbox accepts the power (think of power as a torque that rotates) from the motor, reducing the speed (exactly) by a given ratio, while increasing the torque (roughly) by the same ratio – a ratio of the gear head with which the gear head reduces the motor speed.	For example, if a motor has a speed of 500RPM and the reduction ratio is 100:1, the speed of the gear head is 500/100 = 5RPM. This is the actual reduction ratio. The calculated speed from the gear head should be based on this ratio.
+</p><p><b>Gearbox Step Angle</b>
+</p><p>A full step of the motor will result in the gearbox making a smaller step.  The angle of this step is the step angle of the motor divided by the gearbox reduction ratio. For example, a motor with a step angle of 1.8º and a gearbox with a reduction ratio of 20:1 will have a step angle of 1.8/20 = 0.09º at the output of the gearbox.
+</p><p><b>Gearbox Output Torque</b>
+</p><p>The gearbox takes the torque from the output shaft of the motor, reducing the speed and increasing the torque. The gearbox, depending on its efficiency, loses some of the torque as it is converted into heat. Therefore, the Gearbox Output Torque is the motor output torque multiplied by the reduction ratio multiplied by the efficiency of the gearbox. For example, a motor with a low-speed output torque of 500g*cm and a gearbox with a reduction ratio of 5:1 and 90% efficiency will have a Gearbox Output Torque of 500*5*0.9 = 2.25 kg*cm. Remember, however, that if the Gearbox Output Torque exceeds the allowable torque the gearbox is rated for, you can cause damage to the gearbox.
+</p><p><b>Gear Trains</b>
+</p><p>Planetary gearboxes use multiple gear sets to achieve large gear reductions.  Each gear set makes the gearbox longer, and reduces the efficiency.
+</p>
+<h2> <span class="mw-headline" id="Product_Comparison_Tables">Product Comparison Tables</span></h2>
+<table border="1">
+<caption><b>Stepper Motor Product Specifications</b>
+</caption>
+<tbody><tr>
+<th> Phidgets Product #
+</th>
+<th> Motor Model Number
+</th>
+<th> Motor Type (Unipolar/Bipolar)
+</th>
+<th> Step Angle (deg)
+</th>
+<th> Holding Torque (g•cm)
+</th>
+<th> Low-Speed Torque (g•cm)
+</th>
+<th> Rated Current (A)
+</th>
+<th> Number of Leads
+</th>
+<th> Mounting Plate Size
+</th>
+<th> Shaft Diameter (mm)
+</th>
+<th> Total Weight (g)
+</th>
+<th> Motor Length (mm)
+</th>
+<th> Motor Size/Diameter (mm)
+</th></tr>
+<tr>
+<td> 3302</td>
+<td> 42BYGHM810  </td>
+<td> Hybrid Bipolar </td>
+<td> 0.9</td>
+<td> 4800</td>
+<td> 4280</td>
+<td> 2.4 </td>
+<td> 4</td>
+<td> NEMA-17</td>
+<td> 5  </td>
+<td> 362</td>
+<td> 48  </td>
+<td> 42 x 42
+</td></tr>
+<tr>
+<td> 3303</td>
+<td> 42BYGHW811  </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td> 4800</td>
+<td> 4240</td>
+<td> 2.5 </td>
+<td> 4</td>
+<td> NEMA-17</td>
+<td> 5  </td>
+<td> 332</td>
+<td> 48  </td>
+<td> 42 x 42
+</td></tr>
+<tr>
+<td> 3304</td>
+<td> 39BYGS202   </td>
+<td> Hybrid Bipolar </td>
+<td> 3.75</td>
+<td> 750</td>
+<td> 590 </td>
+<td> 1   </td>
+<td> 4</td>
+<td> NEMA-17</td>
+<td> 5  </td>
+<td> 171</td>
+<td> 32  </td>
+<td> 39 x 39
+</td></tr>
+<tr>
+<td> 3305</td>
+<td> 39BYG013    </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td>  550</td>
+<td> 450 </td>
+<td> 0.4 </td>
+<td> 4</td>
+<td> NEMA-17</td>
+<td> 5  </td>
+<td> 110</td>
+<td> 20  </td>
+<td> 39 x 39
+</td></tr>
+<tr>
+<td> 3314</td>
+<td> PM42L-048-17</td>
+<td> Hybrid Unipolar</td>
+<td> 7.5</td>
+<td> 950 </td>
+<td> 710 </td>
+<td> 0.28</td>
+<td> 6</td>
+<td> N/A    </td>
+<td> 3  </td>
+<td> 138</td>
+<td> 14.4</td>
+<td> 42
+</td></tr>
+<tr>
+<td> 3315</td>
+<td> PM25S-048-15</td>
+<td> Hybrid Unipolar</td>
+<td> 7.5</td>
+<td> 140 </td>
+<td> 50  </td>
+<td> 0.1 </td>
+<td> 6</td>
+<td> N/A    </td>
+<td> 2  </td>
+<td> 31 </td>
+<td> 15  </td>
+<td> 25
+</td></tr>
+<tr>
+<td> 3316</td>
+<td> PM20L-20-14 </td>
+<td> Hybrid Unipolar</td>
+<td> 18 </td>
+<td> 50  </td>
+<td> 30  </td>
+<td> 0.08</td>
+<td> 6</td>
+<td> N/A    </td>
+<td> 1.5</td>
+<td> 24 </td>
+<td> 16.5</td>
+<td> 20
+</td></tr>
+<tr>
+<td> 3320</td>
+<td> 28STH32     </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td> 600 </td>
+<td> 520 </td>
+<td> 0.67</td>
+<td> 4</td>
+<td> NEMA-11</td>
+<td> 5  </td>
+<td> 111</td>
+<td> 32</td>
+<td> 28 x 28
+</td></tr>
+<tr>
+<td> 3323</td>
+<td> 35STH40     </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td> 1400</td>
+<td> 1200</td>
+<td> 1   </td>
+<td> 4</td>
+<td> NEMA-14</td>
+<td> 5  </td>
+<td> 200</td>
+<td> 40</td>
+<td> 35 x 35
+</td></tr>
+<tr>
+<td> 3324</td>
+<td> 42STH38     </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td> 3600</td>
+<td> 3300</td>
+<td> 1.7 </td>
+<td> 4</td>
+<td> NEMA-17</td>
+<td> 5  </td>
+<td> 289</td>
+<td> 40</td>
+<td> 42 x 42
+</td></tr>
+<tr>
+<td> 3330</td>
+<td> 57STH56     </td>
+<td> Hybrid Bipolar </td>
+<td> 0.9</td>
+<td>12000</td>
+<td>11200</td>
+<td> 2.8 </td>
+<td> 4</td>
+<td> NEMA-23</td>
+<td> 6.4</td>
+<td> 695</td>
+<td> 56</td>
+<td> 56 x 56
+</td></tr>
+<tr>
+<td> 3331</td>
+<td> 57STH56     </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td>12600</td>
+<td>11000</td>
+<td> 2.8 </td>
+<td> 4</td>
+<td> NEMA-23</td>
+<td> 6.4</td>
+<td> 686</td>
+<td> 56</td>
+<td> 56 x 56
+</td></tr>
+<tr>
+<td> 3335</td>
+<td> 86STH65     </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td>34000</td>
+<td>30000</td>
+<td>2 or 4 </td>
+<td> 4</td>
+<td> NEMA-34</td>
+<td> 12</td>
+<td> 1800</td>
+<td> 65</td>
+<td> 85 x 85
+</td></tr>
+<tr>
+<td> 3336</td>
+<td> 86STH156    </td>
+<td> Hybrid Bipolar </td>
+<td> 1.8</td>
+<td>122000</td>
+<td>106000</td>
+<td>3 or 6 </td>
+<td> 4</td>
+<td> NEMA-34</td>
+<td> 16</td>
+<td> 5200</td>
+<td> 156</td>
+<td> 85 x 85
+</td></tr>
+<tr>
+<td> 3340</td>
+<td> 42STH38     </td>
+<td> Hybrid Bipolar </td>
+<td> 0.9</td>
+<td>3600</td>
+<td>3300</td>
+<td>1.7 </td>
+<td> 4</td>
+<td> NEMA-17</td>
+<td> 5</td>
+<td>288</td>
+<td> 40</td>
+<td> 42 x 42
+</td></tr></tbody></table>
+<p><br>
+</p>
+<table border="1">
+<caption><b>Gearbox Stepper Motor Product Specifications</b>
+</caption>
+<tbody><tr>
+<th>Product #
+</th>
+<th>Motor Model #
+</th>
+<th>Motor Type
+</th>
+<th>Step Angle<sup>†</sup> (deg)
+</th>
+<th>Holding Torque*,<sup>†</sup> (g-cm)
+</th>
+<th>Low-speed Torque*,<sup>†</sup> (g-cm)
+</th>
+<th>Rated Current (A)
+</th>
+<th># of Leads
+</th>
+<th>Mounting Plate Size
+</th>
+<th>Shaft Diameter (mm)
+</th>
+<th>Total Weight (g)
+</th>
+<th>Motor Length (mm)
+</th>
+<th>Gearbox Length (mm)
+</th>
+<th>Motor Size/Diameter (mm)
+</th>
+<th>Gear Ratio
+</th>
+<th>Gearbox Max Torque (g-cm)
+</th>
+<th>Gearbox Efficiency
+</th>
+<th>Max Speed<sup>†</sup> (RPM)
+</th></tr>
+<tr>
+<td> 3310</td>
+<td>57BYG630-07AG20</td>
+<td>Hybrid Bipolar</td>
+<td>0.09</td>
+<td>30000</td>
+<td>30000</td>
+<td>2.8</td>
+<td>4</td>
+<td>NEMA-23</td>
+<td>8</td>
+<td>1330</td>
+<td>73</td>
+<td>38</td>
+<td>56x56</td>
+<td>20:1</td>
+<td>30000</td>
+<td></td>
+<td>30
+</td></tr>
+<tr>
+<td> 3311</td>
+<td>42BYGHW811-AG5.18</td>
+<td>Hybrid Bipolar</td>
+<td>0.35</td>
+<td>24860</td>
+<td>17790</td>
+<td>2.5</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>513</td>
+<td>48</td>
+<td>31</td>
+<td>42x42</td>
+<td>5.18:1</td>
+<td>30000</td>
+<td>0.9</td>
+<td>115
+</td></tr>
+<tr>
+<td> 3312</td>
+<td>42BYGHW811-AG26.8</td>
+<td>Hybrid Bipolar</td>
+<td>0.07</td>
+<td>40000</td>
+<td>40000</td>
+<td>2.5</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>526</td>
+<td>48</td>
+<td>39</td>
+<td>42x42</td>
+<td>26.8:1</td>
+<td>40000</td>
+<td>0.81</td>
+<td>22
+</td></tr>
+<tr>
+<td> 3313</td>
+<td>42BYGHW811-AG99.5</td>
+<td>Hybrid Bipolar</td>
+<td>0.02</td>
+<td>50000</td>
+<td>50000</td>
+<td>2.5</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>610</td>
+<td>48</td>
+<td>47</td>
+<td>42x42</td>
+<td>99.5:1</td>
+<td>50000</td>
+<td>0.73</td>
+<td>6
+</td></tr>
+<tr>
+<td> 3317</td>
+<td>42BYGH40(M)-160-4A</td>
+<td>Hybrid Bipolar</td>
+<td>0.35</td>
+<td>16780</td>
+<td>12000</td>
+<td>1.6</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>464</td>
+<td>40</td>
+<td>30</td>
+<td>42x42</td>
+<td>5.18:1</td>
+<td>20000</td>
+<td>0.9</td>
+<td>115
+</td></tr>
+<tr>
+<td> 3318</td>
+<td>42BYGH40(M)-160-4A</td>
+<td>Hybrid Bipolar</td>
+<td>0.07</td>
+<td>30000</td>
+<td>30000</td>
+<td>1.6</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>464</td>
+<td>40</td>
+<td>38</td>
+<td>42x42</td>
+<td>26.8:1</td>
+<td>30000</td>
+<td>0.8</td>
+<td>22
+</td></tr>
+<tr>
+<td> 3319</td>
+<td>42BYGH40(M)-160-4A</td>
+<td>Hybrid Bipolar</td>
+<td>0.02</td>
+<td>40000</td>
+<td>40000</td>
+<td>1.6</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>464</td>
+<td>40</td>
+<td>46</td>
+<td>42x42</td>
+<td>99.5:1</td>
+<td>40000</td>
+<td>0.7</td>
+<td>6
+</td></tr>
+<tr>
+<td> 3321</td>
+<td>28STH32-0674B/28JXS40K27</td>
+<td>Hybrid Bipolar</td>
+<td>0.067</td>
+<td>16100</td>
+<td>14000</td>
+<td>0.67</td>
+<td>4</td>
+<td>NEMA-11</td>
+<td>6</td>
+<td>218</td>
+<td>32</td>
+<td>40</td>
+<td>28x28</td>
+<td>27:1</td>
+<td>20000</td>
+<td> </td>
+<td>120
+</td></tr>
+<tr>
+<td> 3322</td>
+<td>28STH32-0674B/28JXS40K100</td>
+<td>Hybrid Bipolar</td>
+<td>0.018</td>
+<td>32000</td>
+<td>32000</td>
+<td>0.67</td>
+<td>4</td>
+<td>NEMA-11</td>
+<td>6</td>
+<td>243</td>
+<td>32</td>
+<td>49</td>
+<td>28x28</td>
+<td>100:1</td>
+<td>32000</td>
+<td> </td>
+<td>35
+</td></tr>
+<tr>
+<td> 3325</td>
+<td>42STH38-1684B/36JXS60K5.18</td>
+<td>Hybrid Bipolar</td>
+<td>0.35</td>
+<td>18000</td>
+<td>18000</td>
+<td>1.7</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>457</td>
+<td>40</td>
+<td>31</td>
+<td>42x42</td>
+<td>5.18:1</td>
+<td>18000</td>
+<td> </td>
+<td>904
+</td></tr>
+<tr>
+<td> 3326</td>
+<td>42STH38-1684B/36JXS60K14</td>
+<td>Hybrid Bipolar</td>
+<td>0.13</td>
+<td>30000</td>
+<td>30000</td>
+<td>1.7</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>502</td>
+<td>40</td>
+<td>39</td>
+<td>42x42</td>
+<td>14:1</td>
+<td>30000</td>
+<td> </td>
+<td>295
+</td></tr>
+<tr>
+<td> 3327</td>
+<td>42STH38-1684B/36JXS60K26</td>
+<td>Hybrid Bipolar</td>
+<td>0.067</td>
+<td>30000</td>
+<td>30000</td>
+<td>1.7</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>503</td>
+<td>40</td>
+<td>39</td>
+<td>42x42</td>
+<td>26.85:1</td>
+<td>30000</td>
+<td> </td>
+<td>174
+</td></tr>
+<tr>
+<td> 3328</td>
+<td>42STH38-1684B/36JXS60K51</td>
+<td>Hybrid Bipolar</td>
+<td>0.035</td>
+<td>48000</td>
+<td>48000</td>
+<td>1.7</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>564</td>
+<td>40</td>
+<td>48</td>
+<td>42x42</td>
+<td>51:1</td>
+<td>48000</td>
+<td> </td>
+<td>63
+</td></tr>
+<tr>
+<td> 3329</td>
+<td>42STH38-1684B/36JXS60K99.51</td>
+<td>Hybrid Bipolar</td>
+<td>0.018</td>
+<td>48000</td>
+<td>48000</td>
+<td>1.7</td>
+<td>4</td>
+<td>NEMA-17</td>
+<td>8</td>
+<td>564</td>
+<td>40</td>
+<td>48</td>
+<td>42x42</td>
+<td>100:1</td>
+<td>48000</td>
+<td> </td>
+<td>34
+</td></tr>
+<tr>
+<td> 3332</td>
+<td>57STH56-2804B/56JXS300K4.25</td>
+<td>Hybrid Bipolar</td>
+<td>0.42</td>
+<td>53000</td>
+<td>46600</td>
+<td>2.8</td>
+<td>4</td>
+<td>NEMA-23</td>
+<td>12</td>
+<td>1200</td>
+<td>56</td>
+<td>48</td>
+<td>57x57</td>
+<td>4.25:1</td>
+<td>90000</td>
+<td> </td>
+<td>375
+</td></tr>
+<tr>
+<td> 3333</td>
+<td>57STH56-2804B/56JXS300K15</td>
+<td>Hybrid Bipolar</td>
+<td>0.12</td>
+<td>150000</td>
+<td>150000</td>
+<td>2.8</td>
+<td>4</td>
+<td>NEMA-23</td>
+<td>12</td>
+<td>1300</td>
+<td>56</td>
+<td>61</td>
+<td>57x57</td>
+<td>15:1</td>
+<td>150000</td>
+<td> </td>
+<td> 116
+</td></tr>
+<tr>
+<td> 3334</td>
+<td>57STH56-2804B/56JXS300K77</td>
+<td>Hybrid Bipolar</td>
+<td>0.023</td>
+<td>240000</td>
+<td>240000</td>
+<td>2.8</td>
+<td>4</td>
+<td>NEMA-23</td>
+<td>12</td>
+<td>1500</td>
+<td>56</td>
+<td>72</td>
+<td>57x57</td>
+<td>77:1</td>
+<td>240000</td>
+<td> </td>
+<td>25
+</td></tr></tbody></table>
+<p><sup>†</sup>Step angle, torque values, and max speed are all measured at the output of the gearbox. 
+</p><p>*Holding torque and low speed torque for gearbox motors are limited by the max torque that the gearbox is rated to sustain.
+*
+</p>
+<h2> <span class="mw-headline" id="Glossary_of_Terms">Glossary of Terms</span></h2>
+<h3> <span class="mw-headline" id="Motor_Terms">Motor Terms</span></h3>
+<p><b>Coil Resistance</b>
+</p><p>The electrical resistance (to direct current) of the wiring within the motor. This resistance causes some of the energy being applied to the motor to be converted into heat.  Some motors and motor controllers rely solely on the electrical resistance to regulate the current flowing through the motor. The Unipolar Motors we sell, and the 1062 PhidgetStepper Unipolar rely on this inexpensive, but inefficient technique. Other motors will have very low resistance, increasing their efficiency, but requiring very sophisticated control techniques because the resistance cannot regulate the current to a safe level on its own. Our Bipolar controllers and our Bipolar motors use this technique, otherwise known as Chopper Drive.
+</p><p><b>Holding Torque</b>
+</p><p>Holding Torque is the amount of torque needed to rotate the shaft of the stepper motor while the controller attempts to hold the position, using the maximum current allowed for the motor. Holding Torque is the sum of the magnetic force exerted by the electrical coils to hold the current position, and the detent torque, which is the natural resistance of the motor against rotation due to the permanent magnet inside the motor.  Once the motor begins to rotate, the torque it can exert (at least at low speeds) is Holding Torque minus twice the detent torque (because the motor is now working against the detent). As the motor speed increases, torque begins to decrease.  If the power supply voltage is low, or the inductance of the motor is high, the torque will fall more rapidly.  
+</p><p><b>Motor Inductance</b>
+</p><p>Stepper motors are built with a specific coil inductance. A high inductance motor will provide a greater amount of torque at low speeds, at the cost of having lower torque at high speeds. 
+</p><p><b>Overhung Load (OHL) / Radial Load</b>
+</p><p>An external load applied on the output shaft of the gearbox.  This load is often produced if pulleys are mounted directly on the shaft, pulling perpendicular to it. When the OHL exceeds a safe value, the bearings can fail, or the shaft can break from bending fatigue. While OHL and Thrust Load specifications are only available for our gearbox motors, both types of load should be avoided when using any of our motors.
+</p><p><b>Rated Current</b>
+</p><p>The rated current is the maximum current that should be applied to each coil of the motor.  Current generates heat within the motor, and exceeding the regulated current will cause the motor to overheat.  If the motor is operated in a hot environment, or is enclosed, it can overheat at currents lower than the rated current.
+</p><p><b>Step Angle</b>
+</p><p>The change in the shaft angle when the motor moves forward or backward by one full step. 
+</p><p><b>Step Accuracy</b>
+</p><p>Depending on the motor and how it is loaded down, the step positions will vary slightly.  Fortunately, this variance doesn’t accumulate – so if you move the motor by one step or one million steps, the angle that the motor stops at will have the same margin of error.
+</p><p><b>Thrust load / Axial Load</b>
+</p><p>A load applied directly in line with the output shaft of the gearbox.  Avoid thrust as much as possible.  If thrust load is unavoidable, keep it to no more than the permissible value.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 221/1000000
+Post-expand include size: 23/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:1901-0!1!0!!en!2!* and timestamp 20161103024849 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://www.phidgets.com/wiki/index.php?title=Stepper_Motor_and_Controller_Primer&amp;oldid=23690">http://www.phidgets.com/wiki/index.php?title=Stepper_Motor_and_Controller_Primer&amp;oldid=23690</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks catlinks-allhidden"><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden category: <ul><li><a href="http://www.phidgets.com/docs/Category:Primer" title="Category:Primer">Primer</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class=" emptyPortlet">
+	<h5>Personal tools</h5>
+	<ul>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer" title="View the content page [ctrl-option-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://www.phidgets.com/wiki/index.php?title=Talk:Stepper_Motor_and_Controller_Primer&amp;action=edit&amp;redlink=1" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer">View</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://www.phidgets.com/wiki/index.php?title=Stepper_Motor_and_Controller_Primer&amp;action=edit" title="This page is protected.
+You can view its source [ctrl-option-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://www.phidgets.com/wiki/index.php?title=Stepper_Motor_and_Controller_Primer&amp;action=history" title="Past revisions of this page [ctrl-option-h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="http://www.phidgets.com/docs/Stepper_Motor_and_Controller_Primer#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://www.phidgets.com/wiki/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search Phidgets Support [ctrl-option-f]" accesskey="f" id="searchInput">			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton">			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton">					<input type="hidden" name="title" value="Special:Search">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+				<!-- <div id="p-logo"><a style="background-image: url(/wiki/wikilogo.png);" href="/docs/Main_Page"  title="Visit the main page"></a></div> -->
+				<!-- /logo -->
+				
+<!-- Navigation -->
+<div class="portal" id="p-Navigation">
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://www.phidgets.com/docs/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li>
+			<li id="n-Software-Overview"><a href="http://www.phidgets.com/docs/Software_Overview">Software Overview</a></li>
+			<li id="n-Operating-Systems"><a href="http://www.phidgets.com/docs/Software_Overview#Operating_System_Support">Operating Systems</a></li>
+			<li id="n-Languages"><a href="http://www.phidgets.com/docs/Software_Overview#Language_Support">Languages</a></li>
+			<li id="n-Primers"><a href="http://www.phidgets.com/docs/Category:Primer">Primers</a></li>
+			<li id="n-Application-Guides"><a href="http://www.phidgets.com/docs/Category:Application_Guides">Application Guides</a></li>
+			<li id="n-Troubleshooting"><a href="http://www.phidgets.com/docs/General_Troubleshooting">Troubleshooting</a></li>
+			<li id="n-Contact-Us"><a href="http://www.phidgets.com/docs/Contact_Us">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://www.phidgets.com/docs/Special:WhatLinksHere/Stepper_Motor_and_Controller_Primer" title="A list of all wiki pages that link here [ctrl-option-j]" accesskey="j">What links here</a></li>
+			<li><a href="http://www.phidgets.com/wiki/index.php?title=Stepper_Motor_and_Controller_Primer&amp;printable=yes" rel="alternate">Printable version</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 26 May 2015, at 19:30.</li>
+											<li id="footer-info-viewcount">This page has been accessed 126,073 times.</li>
+											<li id="footer-info-copyright">This work by Phidgets Inc., except where otherwise noted, is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License (Click the image on the right for more).</li>
+									</ul>
+						
+			<ul id="footer-places">
+				<li id="footer-places-Policies"><a href="http://www.phidgets.com/docs/Policies" title="Policies">Policies</a></li>
+				<li id="footer-places-Licenses"><a href="http://www.phidgets.com/documentation/Licenses/Software_Licenses.pdf" title="Policies">Licenses</a></li>
+				<li id="footer-places-Contact Us"><a href="http://www.phidgets.com/docs/Contact_Us" title="Contact Us">Contact Us</a></li>
+                                <li id="footer-facebook"><a href="http://www.facebook.com/pages/Phidgets-Inc/349015308506335" title="Friend us on Facebook"><img style="vertical-align:middle" src="./stepperDriver_files/facebook_16.png" alt="Facebook logo" width="16" height="16"></a></li>
+			</ul>
+			
+							<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img src="./stepperDriver_files/By-nc-nd-88x31.png" alt="This work by Phidgets Inc., except where otherwise noted, is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License." width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script src="./stepperDriver_files/load(5).php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script><script src="./stepperDriver_files/load(6).php" type="text/javascript"></script>
+<script src="./stepperDriver_files/load(7).php"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./stepperDriver_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-300273-1");
+pageTracker._trackPageview();
+</script><!-- Served in 0.037 secs. -->
+	
+
+</body></html>

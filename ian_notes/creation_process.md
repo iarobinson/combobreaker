@@ -23,8 +23,22 @@ https://www.arduino.cc/en/tutorial/blink
 
 This helped me overcome initial steps like setting the serial port and selecting the right device.
 
-### Simple Arduino Project Using These Tools
+### Servo Swipe: Wiring and Program
 
-My initial goal is to create a tool that can just do something real. If I can get the stepper motor to turn slowly for a few seconds, I'd be happy with that.
+My initial goal is to just get movement out of anything. The first thing I was able to do was get the S1213 Analog Servo to sweep back and forth.
+
+[alt tag]<!-- !image_URL_here -->
+
+Process:
+1. Plug your Arduino nano into the breadboard. It doesn't matter where specifically, but look to the image for guidance
+2. Extend the wiring of the servo using male wires
+3. Push the wires into the breadboard so that they align with the pin number on the Arduino (note: don't use the numbers on the breadboard. In my example, GND is on row 12 of the breadboard.) Here's the wiring guideline:
+- Orange      = D9
+- Black/Brown = GND
+- Red         = 5V
+4. Upload the source code from [https://www.arduino.cc/en/Tutorial/Sweep] to your Arduino (it can be found in Arduino code in this repository too.)
+5. Now your servo should start wiping back and forth.
+
+This is actually the story of my first robot. No matter how little that first step is, it's helpful.
 
 ##
