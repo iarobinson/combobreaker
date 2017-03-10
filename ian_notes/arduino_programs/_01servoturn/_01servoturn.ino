@@ -19,13 +19,21 @@ void setup() {
 }
 
 void loop() {
-  for (pos = 10; pos <= 170; pos += 1) { // goes from 0 degrees to 180 degrees
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+    delay(5);                       // waits 15ms for the servo to reach the position
   }
   for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+    delay(5);                       // waits 15ms for the servo to reach the position
   }
+
+  // the loop routine runs over and over again forever:
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A0);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(5);        // delay in between reads for stability
 }
+
